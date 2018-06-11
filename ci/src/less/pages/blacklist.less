@@ -1,0 +1,57 @@
+
+
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+
+
+@import "../lib/layer.less"; //layer插件
+@import "../lib/jedate.less"; //日期选择插件
+
+@import "../pages/approval-list.less"; //表格样式
+
+body{
+  background-color: #EEF0F1;
+}
+.main{
+  width: 1040px;
+  margin: 0 auto;
+  padding: 15px 0;
+  margin-top:10px;
+}
+.pub_title{
+  margin-bottom: 15px;
+  span:first-child{
+	margin-left:28px;
+	float:left;
+  }
+  h1{
+	display:inline-block;
+	height: 18px;
+	line-height: 18px;
+	font-size: 16px;
+	color: #394550;
+	letter-spacing: 0;
+	margin-left:400px;
+  }
+  span.add_blacklist{
+	margin-right:30px;
+	float:right;
+	a{
+	  color:#4C9BF2;
+	}
+  }
+}
+hr{
+  width: 980px;
+  border: 1px solid #D9DBE0;
+  margin-bottom: 30px;
+}
+.autoNewline
+{
+  display:inline-block;
+  width:200px;
+  text-align:center;
+}

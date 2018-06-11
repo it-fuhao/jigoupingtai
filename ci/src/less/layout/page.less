@@ -1,0 +1,34 @@
+/*分页*/
+.pagination{
+    text-align: right;
+    margin-top: 30px;
+}
+.pagination li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.pagination .disabled{display: none;}
+.pagination li a, .pagination li span {
+    background: #ffffff;
+    border:1px solid #D8D8D8;
+    line-height: 28px;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: block;
+    font-size: 14px;
+    color: #5D778C;
+    letter-spacing: 1px;
+}
+.pagination li.active span,.pagination li:hover a{
+     border: 1px solid #449CF6;
+     color: #fff;
+     background-color: #449CF6;
+ }
+.pagination li:first-child a,.pagination li:first-child span,.pagination li:last-child a{
+    width: 72px;
+    border: 1px solid #449CF6;
+    color: #FFFFFF;
+    background-color: #449CF6;
+}

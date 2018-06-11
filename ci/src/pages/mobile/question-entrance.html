@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var pixRatio = 1 / window.devicePixelRatio;
+            var meta = document.createElement('meta');
+            //console.log(pixRatio);
+            meta.name = 'viewport';
+            meta.content = 'width=device-width,user-scalable=no,initial-scale=' + pixRatio + ',minimum-scale=' + pixRatio + ',maximum-scale=' + pixRatio + '';
+            document.head.appendChild(meta);
+        })();
+        (function () {
+
+            var html = document.documentElement;
+            //var htmlWidth = html.getBoundingClientRect().width;
+            var htmlWidth = html.clientWidth;
+            html.style.fontSize = htmlWidth / 15 + 'px';
+        })();
+    </script>
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>问卷入口</title>
+    <link rel="stylesheet" href="../static/css/info.css">
+</head>
+
+<body class="body">
+    <!-- 头部 start -->
+    <div class="title">
+        <h1>学科类校外培训情况普查登记</h1>
+    </div>
+    <!-- 头部 end -->
+    <!-- 问卷内容 start -->
+    <input type="hidden" id="wx_token" value="">
+    <div id="content" class="content">
+        <div class="wrap">
+            
+
+            <dl class="list mt" data-id="area_id">
+                <dt><b>请选择地区：</b>
+                </dt>
+                <dd class="pub_bg">
+                    <p class="select" id="area_trigger">请选择所在地区</p>
+                    <!-- <input class="select" id="area_trigger" type="text" placeholder="请选择学校所在区县" value="" readonly> -->
+                </dd>
+            </dl>
+
+            
+        </div>
+        <!-- 接口 -->
+        <a class="submit posi" id="js_submit" data-url="./subject.html" href="javascript:;" title="">下一步</a>
+    </div>
+    <!-- 问卷内容 end -->
+    <script src="../../test/city.js"></script>
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/mobile/question-entrance.js"></script>
+</body>
+
+</html>

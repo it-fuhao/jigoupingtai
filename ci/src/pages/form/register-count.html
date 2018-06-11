@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登记统计</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/register-list.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <!-- 主体 -->
+<!-- 管理头部 start -->
+<div id="header" class="header_gl">
+    <div class="header_area">
+        <h1 class="header_logo">民办教育综合管理平台</h1>
+        <div class="header_logo_after">
+            <div class="header_nav">
+                <a class="active" href="javascript:;">业务办理</a>
+                <a href="javascript:;">机构列表</a>
+                <a href="javascript:;">配置管理</a>
+            </div>
+            <div class="header_user_link">
+                <a href="javascript:;">修改密码</a>
+                <a href="javascript:;">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 管理头部 end -->
+<!-- 管理二级导航 start -->
+<div class="subnav">
+    <div class="subnav_con_gl">
+        <a href="javascript:;" title="审批办学资格">审批办学资格</a>
+        <a class="active" href="javascript:;" title="登记管理">登记管理</a>
+        <a href="javascript:;" title="备案管理">备案管理</a>
+        <a href="javascript:;" title="办学变更">办学变更</a>
+    </div>
+</div>
+    <div class="main">
+        <div class="dj_count_box">
+            <a href="javascript:;">返回</a>
+            <h2>2018年民办机构收费情况登记</h2>
+            <p>2018-01-04至2018-05-01</p>
+        </div>
+       
+        <!-- 未审批 start -->
+        <div class="main_con">
+            <div class="pc_content">
+                <dl class="chose_one">
+                    <dd data-id="1" class="active"><i></i><span>未审批</span></dd>
+                    <dd data-id="2"><i></i><span>已审批</span></dd>
+                </dl>
+            </div>
+            <table class="main_con_table">
+                <thead>
+                    <tr>
+                        <th>机构名称</th>
+                        <th>提交时间</th>
+                        <th>审核结果</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>成都市金牛区学而思学校</td>
+                        <td>2018-01-08 12:50</td>
+                        <td>合格</td>
+                        <td><a href="javascript:;">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>新东方高级技工学校</td>
+                        <td>2018-01-08 12:50</td>
+                        <td>基本合格</td>
+                        <td><a href="javascript:;">编辑</a></td>
+                    </tr>
+                    <tr>
+                        <td>红黄蓝培训中心</td>
+                        <td>2018-01-08 12:50</td>
+                        <td>不合格</td>
+                        <td><a href="javascript:;">编辑</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 未审批 end -->
+        <!-- 翻页 start -->
+        <div class="paging_box">
+            <ul class="pagination">
+                <li><a href="javascript:;">上一页</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">下一页</a></li>
+            </ul>
+        </div>
+        <!-- 翻页 end -->
+    </div>
+
+    <!-- <script src="../static/js/form/formal-setup.js"></script> -->
+</body>
+
+</html>

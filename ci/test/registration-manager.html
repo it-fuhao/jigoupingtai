@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>自建表单</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+    <!-- <link rel="stylesheet" href="../static/css/registration-manager.css">    -->
+    <link rel="stylesheet" href="./registration-manager.css">   
+</head>
+<style>
+
+</style>
+<body>
+    <!-- 头部 start -->
+    <!-- <div id="header" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- 头部 end -->
+    <!-- 机构申办流程条 start -->
+    <div class="subnav">
+        <div class="subnav_con_jg active">
+            <a class="subnav_con_jg_link active" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="预约"><span>预约</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+        </div>
+    </div>
+    <!-- 机构申办流程条 end -->
+
+
+    <!-- 管理头部 start -->
+    <div id="header" class="header_gl">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育综合管理平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a href="javascript:;">业务办理</a>
+                    <a href="javascript:;">机构列表</a>
+                    <a href="javascript:;">配置管理</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 管理头部 end -->
+    <!-- 管理二级导航 start -->
+    <div class="subnav">
+        <div class="subnav_con_gl">
+            <a href="javascript:;" title="审批办学资格">审批办学资格</a>
+            <a class="active" href="javascript:;" title="登记管理">登记管理</a>
+            <a href="javascript:;" title="备案管理">备案管理</a>
+            <a href="javascript:;" title="办学变更">办学变更</a>
+        </div>
+    </div>
+    <!-- 管理二级导航 end -->
+
+    <!-- 主体内容 start -->
+    <div id="main"  class="ct">
+        <!-- 管理三级导航 start -->
+        <!-- <div class="nav_third">
+            <a href="javascript:;" title="筹备设立">筹备设立</a>
+            <a class="active" href="javascript:;" title="正式设立">正式设立</a>
+            <a href="javascript:;" title="签 到">签 到</a>
+            <a href="javascript:;" title="待发证">待发证</a>
+        </div> -->
+        <!-- 管理三级导航 end -->
+
+        <div id="registration-managet">
+            <table id="custom_form">
+                <thead>
+                    <tr>
+                        <td class="title">标题</td>
+                        <td class="control-style">控件样式</td>
+                        <td class="note">说明备注</td>
+                        <td class="operation"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 默认样式 -->
+                    <tr> 
+                        <td class="title noting"></td>
+                        <td class="control-style noting"></td>
+                        <td class="note noting"></td>
+                        <td class="operation">
+                            <a href="javascript:;" class="add_tr"></a>
+                        </td>
+                    </tr>
+                    <!-- 编辑中样式 -->
+                    <tr>
+                        <td class="title editing" data="abc"> 
+                            <input type="text" value="abc" data="haha">
+                        </td>
+                        <td class="control-style editing check_input">
+							<div class="pc_box">
+								<div class="pc_content">
+									<p class="dropdown check_p" data-id=""><i></i></p>
+                                    <ul class="drop_list all_style">
+                                        <li class="inp">
+                                            <p class="l">输入框:</p>
+                                            <div class="r">
+                                                <p>请输入</p>
+                                            </div>
+                                        </li>
+                                        <li class="text">
+                                            <p class="l">文本域:</p>
+                                            <div class="r">
+                                                <p>请输入</p>
+                                            </div>
+                                        </li>
+                                        <li class="c_one">
+                                            <p class="l">单选框:</p>
+                                            <div class="r">
+                                                <i class="a"></i><span>是</span><i></i><span>否</span>
+                                            </div>
+                                        </li>
+                                        <li class="c_more">
+                                            <p class="l">复选框:</p>
+                                            <div class="r">
+                                                <i class="a"></i><span>选项一</span><i></i><span>选项二</span>
+                                            </div>
+                                        </li>
+                                        <li class="drop">
+                                            <p class="l">下拉列表:</p>
+                                            <div class="r">
+                                                <p>请选择<i></i></p>
+                                            </div>
+                                        </li>
+                                        <li class="file">
+                                            <p class="l">上传文件:</p>
+                                            <div class="r">
+                                                <p>请选择文件<i></i></p>
+                                            </div>
+                                            <p class="grey_btn">上传文件</p>
+                                        </li>
+                                        <li class="file">
+                                            <p class="l">上传图片:</p>
+                                            <div class="r">
+                                                <p>请选择图片<i></i></p>
+                                            </div>
+                                            <p class="grey_btn">上传图片</p>
+                                        </li>
+                                    </ul>
+								</div>
+							</div>
+						</td>
+						<!--<td class="check_input">-->
+						<!--</td>-->
+                        <td class="note editing">
+                            <input type="text">
+                        </td>
+                        <td class="operation">
+							<span style="width:5px;">
+								<a href="javascript:;" class="add_tr">+</a><a href="javascript:;" class="remove_tr">-</a>
+							</span>
+
+                        </td>
+                    </tr>                 
+                    
+                </tbody>
+            </table>
+            <div class="pub_form_box">
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">输入框:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                <div class="pc_box address">
+                    <div class="pc_info">
+                        <p>三级联动:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown_area" data-id=""><span>请选择</span><i></i></p>
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p>下拉列表:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list scroll">
+                            <li data-id="1">租赁</li>
+                            <li data-id="2">自有</li>
+                            <li data-id="2">自有</li>
+                        </ul>
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p>上传文件:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="dan_p">单选:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one" data-id="1">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="no_margin">多选题:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_more">
+                            <dd data-id="1" class=""><i></i><span>董事长</span></dd>
+                            <dd data-id="2" class=""><i></i><span>董事</span></dd>
+                            <dd data-id="3" class=""><i></i><span>校长</span></dd>
+                            <dd data-id="4" class=""><i></i><span>副校长</span></dd>
+                            <dd data-id="8"><i></i><span>无</span></dd>
+                            <dd data-id="5" class=""><i></i><span>法定代表人</span></dd>
+                            <dd data-id="6"><i></i><span>管理人员</span></dd>
+                            <dd data-id="7"><i></i><span>教职员工</span></dd>
+                        </dl>
+                    </div>
+                    <div class="pc_right_info">
+                        123
+                    </div>
+                </div>
+                
+            </div>
+            <a href="javascript:void(0)" id="add"></a>
+            <div class="control-choose">
+                <div class="common-control">
+                    <div class="title">控件选择</div>
+                    <div class="control-input-text control-item ">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/1.png" alt="">
+                            <img class="control-icon white" src="../static/images/1-white.png" alt="">
+                            <p class="preview-input preview">请输入文字</p>
+                        </div>
+                        <div class="control-rules">
+                            <div class="checkbox">
+                                <div class="item selected">
+                                    <span class="circle"></span>
+                                    <span>文本</span>
+                                </div>
+                                <div class="item">
+                                    <span class="circle"></span>
+                                    <span>数字</span>
+                                </div>
+                                <div class="item  ">
+                                    <span class="circle"></span>
+                                    <span>日期</span>
+                                </div>
+                                <input type="text" placeholder="最大长度">
+                                <input type="text" placeholder="最小长度">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-select control-item ">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/2.png" alt="">
+                            <img class="control-icon white" src="../static/images/2-white.png" alt="">
+                            <p class="preview-select preview">请选择文字</p>
+                            <i class="dropdown"></i>
+                        </div>
+                        <div class="control-rules">
+                            <textarea placeholder="输入下拉选项，以回车分割"></textarea>
+                        </div>
+                    </div>
+                    <div class="control-date control-item ">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/3.png" alt="">
+                            <img class="control-icon white" src="../static/images/3-white.png" alt="">
+                            <p class="preview preview-date-start">起始</p>
+                            <span>-</span>
+                            <p class="preview preview-date-end">结束</p>
+                        </div>
+                        <div class="control-rules">
+                            <div class="checkbox">
+                                <div class="item selected">
+                                    <span class="circle"></span>
+                                    <span>数字</span>
+                                </div>
+                                <div class="item  ">
+                                    <span class="circle"></span>
+                                    <span>日期</span>
+                                </div>
+                                <input type="text" placeholder="起始数值">
+                                <input type="text" placeholder="结束数值">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-upload control-upload-file control-item">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/4.png" alt="">
+                            <img class="control-icon white" src="../static/images/4-white.png" alt="">
+                            <p class="preview preview-upload">请上传文件</p>
+                            <button class="button-upload">上传</button>
+                        </div>
+                    </div>
+                    <div class="control-long-text control-item active">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/5.png" alt="">
+                            <img class="control-icon white" src="../static/images/5-white.png" alt="">
+                            <p class="preview preview-long-text">请上传文件</p>
+                            <div class="scroll-bar"></div>
+                        </div>
+                        <div class="control-rules">
+                            <div class="checkbox">
+                                <div class="item">
+                                    <span class="circle"></span>
+                                    <span>文本</span>
+                                </div>
+                                <div class="item selected">
+                                    <span class="circle"></span>
+                                    <span>数字</span>
+                                </div>
+                                <div class="item  ">
+                                    <span class="circle"></span>
+                                    <span>日期</span>
+                                </div>
+                                <input type="text" placeholder="最大长度">
+                                <input type="text" placeholder="最小长度">
+                                <input type="text" placeholder="最大字数">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="control-upload control-upload-img control-item">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/6.png" alt="">
+                            <img class="control-icon white" src="../static/images/6-white.png" alt="">
+                            <p class="preview preview-upload">请上传图片</p>
+                            <button class="button-upload">上传</button>
+                        </div>
+                        <div class="control-rules">
+                            <div class="checkbox">
+                                <div class="item selected">
+                                    <span class="circle"></span>
+                                    <span>png</span>
+                                </div>
+                                <div class="item ">
+                                    <span class="circle"></span>
+                                    <span>jpg</span>
+                                </div>
+                                <div class="item  ">
+                                    <span class="circle"></span>
+                                    <span>jpeg</span>
+                                </div>
+                                <div class="item selected">
+                                    <span class="circle"></span>
+                                    <span>bmp</span>
+                                </div>
+                                <div class="item">
+                                    <span class="circle"></span>
+                                    <span>gif</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-radio control-item">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/7.png" alt="">
+                            <img class="control-icon white" src="../static/images/7-white.png" alt="">
+                            <span>单选</span>
+                        </div>
+                        <div class="control-rules">
+                            <textarea placeholder="输入选项，以回车分割"></textarea>
+                        </div>
+                    </div>
+                    <div class="control-checkbox control-item">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/8.png" alt="">
+                            <img class="control-icon white" src="../static/images/8-white.png" alt="">
+                            <span>多选</span>
+                        </div>
+                        <div class="control-rules">
+                            <textarea placeholder="输入选项，以回车分割"></textarea>
+                        </div>
+                    </div>
+                <div class="system-control">
+                    <div class="title">系统控件</div>
+                    <div class="control-area control-item">
+                        <div class="control-content">
+                            <img class="control-icon" src="../static/images/9.png" alt="">
+                            <img class="control-icon white" src="../static/images/9.png" alt="">
+                            <p class="preview-select preview">选择省市区</p>
+                            <i class="dropdown"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="my_img">
+				<ul>
+					<li>
+						 <span>输入框：</span>
+						<input type="text" placeholder="请输入文本">
+					</li>
+					<li>
+						  <span>文本域：</span>
+						<textarea name="" id=" " placeholder="" cols="30" rows="5"></textarea>
+					</li>
+					<li>
+						 <span>下拉框：</span>
+						<select name="" id="";>
+							<option value="" selected="selected">请-选择</option>
+						</select>
+					</li>
+					<li>
+						 <span>单选框：</span>
+						<input type="radio" name="gender" checked> 男
+						<input type="radio" name="gender"> 女
+					</li>
+					<li>
+						<span>复选框：</span>
+						<input type="checkbox" checked> 多选
+					</li>
+				</ul>
+			</div>
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+
+    <!-- 底部 start -->
+   <!--  <div id="footer" class="footer">
+        <div class="footer_text">
+            版权所有：民办教育综合管理平台 京ICP备09003423号 审批资质号：教G-201808324<br>
+技术支持：教育技术管理中心<br>
+地　址：朝阳区花家地南街8号　联系电话：123456
+        </div>
+    </div> -->
+    <!-- 底部 end -->
+   
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/form/registration.js"></script>
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请办学-正式设立</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/formal-setup.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <div id="header1" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+            <div class="header_logo_after">
+                <div class="header_nav">
+                    <a href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a class="active" href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容start -->
+    <div class="main" data-isChange="0" data-nowPage="form1" data-change="">
+        <div class="tab">
+            <ul>
+                <li class="active"><a href="./formal-setup-1.html">基本情况</a><i class="finish"></i></li>
+                <li><a href="./formal-setup-2.html">培训项目和教材</a><i></i></li>
+                <li><a href="./formal-setup-3.html">办学场所</a><i></i></li>
+                <li><a href="./formal-setup-4.html">举办者</a><i></i></li>
+                <li><a href="./formal-setup-5-1.html">组织机构</a><i></i></li>
+                <li><a href="./formal-setup-6-1.html">行政领导</a><i></i></li>
+                <li><a href="./formal-setup-7.html">资金资产</a><i></i></li>
+                <li class="no_border"><a href="./formal-setup-8-1.html">教职员工</a><i></i></li>
+            </ul>
+        </div>
+        <!-- 查看1 审核3 -->
+        <input type="hidden" id="addCheck" value="">
+        <!-- 页面id（审核调用） -->
+        <input type="hidden" id="pageId" value="1"> 
+        <div class="ct">
+            <!-- 表单一st -->
+            <div class="ct1">
+                <!-- 基本信息start -->
+                <div class="pub_box" data-field="1" data-id="1">
+                    <div class="pub_title">
+                        <h1>基本信息</h1>
+                    </div>
+                    <div class="pub_form_box">
+                        <div class="pc_box" data-field="name">
+                            <!-- <i class="pc_check"></i> -->
+                            <div class="pc_info">
+                                <p>名称:</p>
+                            </div>
+                            <div class="pc_content">
+                                <textarea cols="30" rows="10" placeholder="非营利性民办培训机构的名称，依次由行政区划名称、字号（两个以上汉字组成）、业务领域、组织形式四部分组成。">123</textarea>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="is_foodplace" data-isNull="1">
+                            <div class="pc_info">
+                                <p class="dan_p">是否自设食堂:</p>
+                            </div>
+                            <div class="pc_content">
+                                <dl class="chose_one" data-id="1">
+                                    <dd data-id="1" class="active"><i></i><span>是</span></dd>
+                                    <dd data-id="2"><i></i><span>否</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- 多选题模板 -->
+                        <div class="pc_box" data-field="inner_job">
+                            <div class="pc_info">
+                                <p class="no_margin">在本校担任职务:</p>
+                            </div>
+                            <div class="pc_content">
+                                <dl class="chose_more">
+                                    <dd class="active" data-id="1" class=""><i></i><span>董事长</span></dd>
+                                    <dd class="active" data-id="2" class=""><i></i><span>董事</span></dd>
+                                    <dd class="active" data-id="3" class=""><i></i><span>校长</span></dd>
+                                    <dd data-id="4" class=""><i></i><span>副校长</span></dd>
+                                    <dd data-id="5" class=""><i></i><span>法定代表人</span></dd>
+                                    <!-- 换行 -->
+                                    <br>
+                                    <dd data-id="6"><i></i><span>管理人员</span></dd>
+                                    <dd data-id="7"><i></i><span>教职员工</span></dd>
+                                    <dd data-id="8"><i></i><span>无</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_cer_date">
+                            <div class="pc_info">
+                                <p class="input_p">开户许可证发证日期:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写" class="js_time_input1" value="1992/10/2" readonly>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="idcard_duration">
+                            <div class="pc_info">
+                                <p class="input_p">有效期:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" class="date_input js_time_input1" placeholder="请填写" value="1992/11/02" readonly>
+                                <span class="wz">-</span>
+                                <input type="text" class="date_input js_time_input2" placeholder="请填写" value="1992/11/03" readonly>
+                            </div>
+                        </div>
+                        <!-- <div class="pc_box address" data-field="addr">
+                            <div class="pc_info">
+                                <p>地址:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="dropdown_area" data-id="1/1/1"><span data-field="address_info">北京/北京/北京</span><i></i></p>
+
+                                <input type="text" placeholder="请填写详细地址" class="addr_input" data-field="address">
+                            </div>
+                        </div>
+                        <div class="pc_box address" data-field="addr">
+                            <div class="pc_info">
+                                <p>地址:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="dropdown_area" data-id="1/1/1"><span data-field="address_info">北京/北京/北京</span><i></i></p>
+
+                                <input type="text" placeholder="请填写详细地址" class="addr_input" data-field="address">
+                            </div>
+                        </div> -->
+                        <div class="pc_box" data-field="nation">
+                            <div class="pc_info">
+                                <p>民族:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                                <ul class="drop_list scroll">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="supervisor_division">
+                            <div class="pc_info">
+                                <p>主管部门:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="dropdown" data-id="4"><span></span><i></i></p>
+                                <ul class="drop_list scroll">
+                                    <!-- todo 数据渲染 -->
+                                    <li data-id="1">xxxxx教育局</li>
+                                    <li data-id="2">中等及中等以下</li>
+                                    <li data-id="3">中等及中等以下</li>
+                                    <li data-id="4">中等及中等以下1</li>
+                                    <li data-id="5">中等及中等以下</li>
+                                    <li data-id="6">中等及中等以下</li>
+                                    <li data-id="7">中等及中等以下</li>
+                                    <li data-id="2">中等及中等以下</li>
+                                    <li data-id="2">中等及中等以下</li>
+                                    <li data-id="2">中等及中等以下</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box" data-field="is_as_jisu_student">
+                            <div class="pc_info">
+                                <p class="dan_p">是否招收寄宿学员:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box" data-field="is_as_jisu_yuelan">
+                            <div class="pc_info">
+                                <p class="dan_p">是否有相应阅览场所:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box" data-field="is_as_jisu_shenghuo">
+                            <div class="pc_info">
+                                <p class="dan_p">是否有生活场所:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box" data-field="is_as_jisu_yundong">
+                            <div class="pc_info">
+                                <p class="dan_p">是否有运动场所:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="is_as_jisu_file">
+                            <div class="pc_info">
+                                <p>相关佐证材料上传:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="../">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="rule_file">
+                            <div class="pc_info">
+                                <p>章程:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="legal_person_file" data-isNull="1">
+                            <div class="pc_info">
+                                <p class="er_p">学校法人属性选择的文件 <br>（“现有学校过渡”填写）:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 基本信息end -->
+
+                <!-- 管理制度start -->
+                <div class="pub_box" data-field="1" data-id="2">
+                    <div class="pub_title">
+                        <h1>管理制度</h1>
+                    </div>
+                    <div class="pub_form_box">
+
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">1.行政管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">2.教学管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">3.安全管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">4.员工管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">5.学生管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">6.档案管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="er_p">7.资产管理、财务管理以及学 <br>杂费存取专用帐户管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">8.收费和退费管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">9.设施设备管理制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box grey_box">
+                            <div class="pc_info">
+                                <p class="dan_p">10.教师培训及考核制度:</p>
+                            </div>
+                            <div class="pc_content">
+                                <p class="grey_p">是</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="xiaofang_rules">
+                            <div class="pc_info">
+                                <p>消防安全证明的上传:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="student_fee_file">
+                            <div class="pc_info">
+                                <p class="er_p">培训机构和银行草签的 <br>学杂费专用帐户管理协议:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- 管理制度end -->
+
+                <!-- 变更流程显示内容 -->
+                <div class="else_box">
+                    <div class="pub_box">
+                        <div class="pub_title">
+                            <h1>变更理由</h1>
+                        </div>
+                        <div class="pub_form_box">
+                            <div class="pc_box" data-field="change_reason">
+                                <div class="pc_info">
+                                    <p>变更理由:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <textarea cols="30" rows="10" placeholder="请填写变更理由"></textarea>
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="change_data">
+                                <div class="pc_info">
+                                    <p>支撑材料:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <div class="preview_box">
+                                        <p class="form_input">
+                                            <span>未选择任何文件</span>
+                                            <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                        </p>
+                                    </div>
+                                    <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                        <a href="javascript:;" class="file_btn">
+                                            <span>上传文件</span>
+                                            <input type="file" class="js_upload" name="file" data-id="">
+                                        </a>
+                                    </form>
+                                    <p class="up_info">最大可上传2MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub_box">
+                        <div class="pub_title">
+                            <h1>
+                                <span class="title">申请人信息</span>
+                            </h1>
+                        </div>
+                        <div class="pub_form_box">
+                            <div class="pc_box" data-field="idcard_type">
+                                <div class="pc_info">
+                                    <p>申请人证件类型:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                                    <ul class="drop_list">
+                                        <li data-id="1">办学许可证</li>
+                                        <li data-id="2">法人登记证</li>
+                                        <li data-id="3">组织机构代码证</li>
+                                        <li data-id="4">身份证</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="idcard_id">
+                                <div class="pc_info">
+                                    <p class="input_p">申请人证件号码:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="name">
+                                <div class="pc_info">
+                                    <p class="input_p">联系人姓名:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="phone">
+                                <div class="pc_info">
+                                    <p class="input_p">联系人手机号:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="address">
+                                <div class="pc_info">
+                                    <p class="input_p">联系人地址:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" class="long_input" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="fixed_phone">
+                                <div class="pc_info">
+                                    <p class="input_p">固定电话:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="fax">
+                                <div class="pc_info">
+                                    <p class="input_p">联系人传真:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box" data-field="email">
+                                <div class="pc_info">
+                                    <p class="input_p">联系人邮箱地址:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 查看1 渲染内容 -->
+                <div class="audit_status">
+                    <h3 class="audit_status_title">审核状态</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>环节</th>
+                                <th>时间</th>
+                                <th>环节状态</th>
+                                <th>内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>筹备设立－网上申报</td>
+                                <td>2018年4月24日 07:58:40</td>
+                                <td>已提交</td>
+                                <td>已提交</td>
+                            </tr>
+                            <tr>
+                                <td>受理</td>
+                                <td>2018年4月24日 07:58:40</td>
+                                <td>已受理</td>
+                                <td>受理该申请</td>
+                            </tr>
+                            <tr>
+                                <td>审批</td>
+                                <td>2018年4月24日 07:58:40</td>
+                                <td>审查不审批</td>
+                                <td>
+                                    <a class="disagree" href="javascript:;">
+                                        不同意
+                                        <div class="disagree_cause">
+                                            <h5>不同意原因：</h5>
+                                            <p>不同意原因文本不同意原因不同意原因不同意原因不同意原因不同意原因不同意原因不同意原因文本不同意原因不同意原因不同意原因不同意原因不同意原因不同意原因不同意原因文本不同意原因不同意原因不同意原因不同意原因不同意原因不同意原因</p>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="main_con_btn" href="javascript:;">修 改</a>
+                </div>
+
+                <!-- 审核3 渲染内容 -->
+                <div class="cause">
+                    <p class="hint">填写不同意原因：</p>
+                    <textarea class="cause_text" placeholder="请填写不同意原因"></textarea>
+                </div>
+                <div class="btn_box">
+                    
+                    <!-- 正式设立保存接口 -->
+                    <input type="hidden" id="url_save" value="1">
+
+                    <!-- 审核接口 -->
+                    <input type="hidden" id="url_audit" value="1">
+                    <a href="javascript:;" class="js_storage">保 存</a>
+                </div>
+
+            </div>
+            <!-- 表单一end -->
+        </div>
+    </div>
+    <!-- 主体内容end -->
+    
+    
+
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+
+</html>

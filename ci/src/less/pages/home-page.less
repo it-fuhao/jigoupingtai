@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+
+
+@import "../lib/layer.less"; //layer插件
+@import "../lib/jedate.less"; //日期选择插件
+
+@import "../pages/approval-list.less"; //表格样式
+
+body{
+  background-color: #EEF0F1;
+}
+.main_page{
+  width: 1080px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 70px;
+  .nav{
+	.clearfix();
+  }
+  .nav a{
+	display: block;
+	float:left;
+	width:344px;
+	height:118px;
+	background-color:#fff;
+	margin-top:10px;
+	line-height:120px;
+	text-align:center;
+	border:1px solid transparent;
+	border-radius:5px;
+	span{
+	  font-size:16px;
+	  font-weight:bold;
+	  color:#142769;
+	}
+	img{
+	  vertical-align:middle;
+	}
+  }
+  .nav a:hover{
+	border-color:#008963;
+	cursor: pointer;
+  }
+  .nav .map{
+	margin-left:20px;
+	margin-right:0px;
+  }
+  div.listbox{
+	clear:both;
+	margin-top:10px;
+  }
+  div.listbox ul{
+	border:1px solid #ddd;
+	margin-top:15px;
+	border-radius: 5px;
+	border-top:none;
+	background-color: #fff;
+  }
+  div.listbox ul li{
+	 border-top:1px solid #ddd;
+	 height:50px;
+	 line-height: 50px;
+	padding-left:20px;
+	padding-right:10px;
+	.list_title{
+	  display:inline-block;
+	  background-color:#142769;
+	  width:150px;
+	  height:50px;
+	  font-weight:bold;
+	  font-size:16px;
+	  color:#fff;
+	  padding-left:20px;
+	  border-radius: 5px;
+	}
+   }
+  div.listbox ul li:first-child{
+	background:linear-gradient(left,#A8B0B9, #FFFFFF);
+	padding-left:0px;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#A8B0B9',endColorStr='#FFFFFF',gradientType='1');
+	background: -moz-linear-gradient(left, #A8B0B9, #FFFFFF);
+	background: -o-linear-gradient(left,#A8B0B9, #FFFFFF);
+	background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#A8B0B9), to(#FFFFFF));
+	border-top:none;
+	a{
+
+	}
+  }
+  div.listbox ul li a{
+	float:left;
+	color: #394550;
+  }
+  div.listbox ul li a:hover{
+	color: #008963;
+  }
+
+  div.listbox ul li span:last-child{
+	color: #394550;
+	float:right;
+	padding-right:20px;
+  }
+}
+
+

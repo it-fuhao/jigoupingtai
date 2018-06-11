@@ -1,0 +1,120 @@
+/*
+ * @Author: fuhao 
+ * @Date: 2018-05-02 15:46:39 
+ * @Last Modified by: fuhao
+ * @Last Modified time: 2018-05-02 17:02:10
+ */
+
+@charset "UTF-8";
+
+@import "../pages/approval-list.less";
+
+body {
+    background: #EEF0F1;
+}
+
+#main_box {
+    padding-top: 12px;
+}
+
+.main {
+    width: 980px;
+    padding: 20px 30px 40px;
+    margin: 0 auto 50px;
+    background: #FFF;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.50);
+    .modal_ct{
+        width: 400px;
+        height: 265px;
+        margin: 0 auto;
+        margin-top: 256px;
+        background: #FFFFFF;
+        border: 1px solid #D9DBE0;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+        border-radius: 4px;
+        >p{
+            .clearfix();
+            a{
+                display: block;
+                width: 14px;
+                height: 14px;
+                background: url('@{CDN_URL}images/close.png') no-repeat;
+                background-size: contain;
+                float: right;
+                margin-top: 14px;
+                margin-right: 14px;
+            }
+        }
+        
+    }
+}
+.modal_content{
+    width: 336px;
+    margin: 0 auto;
+    h3{
+        font-size: 16px;
+        color: #394550;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+    input{
+        background: #F2F4F7;
+        border-radius: 4px;
+        width: 316px;
+        padding: 9px 10px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 25px;
+    }
+    .info{
+        font-size: 14px;
+        color: #67717D;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .hint{
+        visibility: hidden;
+        text-align: right;
+        color: #EF4161;
+    }
+    .show{
+        visibility: visible;
+    }
+}
+.btn_box{
+    text-align: right;
+    a{
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #394550;
+        letter-spacing: 0;
+        text-align: center;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+    .close{
+        background: #F2F4F7;
+    }
+    .js_sure{
+        background: #4C9BF2;
+        color: #fff;
+    }
+}

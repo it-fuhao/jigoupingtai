@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>注册</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/register.css">   
+</head>
+<body>
+    <!-- 头部 start -->
+    <div id="header" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+        </div>
+    </div>
+    <!-- 头部 end -->
+
+    <!-- 主体内容 start -->
+    <div id="register" class="register">
+        <h2 class="register_title">欢迎注册民办教育机构平台</h2>
+        <div class="form">
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_mobile" type="text">
+                    <span class="input_placeholder">请输入手机号</span>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item code_input">
+                    <input id="js_message" type="text">
+                    <span class="input_placeholder">请输入验证码</span>
+                    <a id="js_note_code" class="note_vcode" href="javascript:;">获取验证码</a>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_passw" type="password">
+                    <span class="input_placeholder">请输入密码</span>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_passws" type="password">
+                    <span class="input_placeholder">请再次输入密码</span>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_email" type="email">
+                    <span class="input_placeholder">请输入邮箱</span>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_classify" class="select_input" type="text" readonly>
+                    <span class="input_placeholder">请选择所在区</span>
+                    <i class="down_arrow"></i>
+                    <div class="select_box">
+                        <ul class="scroll">
+                            <li data-id="1">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                            <li data-id="2">选项一</li>
+                        </ul>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+            <div class="form_list">
+                <div class="input_item">
+                    <input id="js_is_directly" class="select_input" type="text" readonly>
+                    <span class="input_placeholder">请选择是否直属</span>
+                    <i class="down_arrow"></i>
+                    <div class="select_box">
+                        <ul class="scroll">
+                            <li data-id="1">是</li>
+                            <li data-id="2">否</li>
+                        </ul>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+            <div class="btn_box">
+                <p class="hint">请输入手机号</p>
+                <a class="form_submit" id="js_register" href="javascript:;">注 册</a>
+                <a class="login_link" href="javascript:;">已有账号，去登陆</a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/user/register.js"></script>
+</body>
+</html>

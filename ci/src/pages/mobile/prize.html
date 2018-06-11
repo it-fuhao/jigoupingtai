@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var pixRatio = 1 / window.devicePixelRatio;
+            var meta = document.createElement('meta');
+            //console.log(pixRatio);
+            meta.name = 'viewport';
+            meta.content = 'width=device-width,user-scalable=no,initial-scale=' + pixRatio + ',minimum-scale=' + pixRatio + ',maximum-scale=' + pixRatio + '';
+            document.head.appendChild(meta);
+        })();
+        (function () {
+
+            var html = document.documentElement;
+            //var htmlWidth = html.getBoundingClientRect().width;
+            var htmlWidth = html.clientWidth;
+            html.style.fontSize = htmlWidth / 15 + 'px';
+        })();
+    </script>
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>抽奖</title>
+    <!-- <link rel="stylesheet" href="../../test/layer/mobile/need/layer.css"> -->
+    <link rel="stylesheet" href="../static/css/prize.css">
+</head>
+
+<body>
+    <!-- <input type="hidden" id="wx_token" value=""> -->
+    <input type="hidden" id="prize" value="1">
+    <div id="content" class="content">
+        <div class="info_box">
+            <h2>调查问卷提交成功！</h2>
+            <p>为感谢您的耐心参与与支持，您将<br>获得<span>1次抽奖机会</span>！</p>
+            <div class="xt"></div>
+        </div>
+        <main>
+            <div class="draw" id="lottery">
+                <table>
+                    <tr>
+                        <td class="item lottery-unit lottery-unit-0">
+                            感谢参与
+                        </td>
+                        <td class="gap"></td>
+                        <td class="item item2 lottery-unit lottery-unit-1">
+                            5元<br>手机话费
+                        </td>
+                        <td class="gap"></td>
+                        <td class="item lottery-unit lottery-unit-2">
+                             感谢参与
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="gap-2" colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="item item2 lottery-unit lottery-unit-7">
+                             20元<br>手机话费
+                        </td>
+                        <td class="gap"></td>
+                        <td class="">
+                            <a class="draw-btn" href="javascript:"></a>
+                        </td>
+                        <td class="gap"></td>
+                        <td class="item item2 lottery-unit lottery-unit-3">
+                             10元<br>手机话费
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="gap-2" colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="item lottery-unit lottery-unit-6">
+                             感谢参与
+                        </td>
+                        <td class="gap"></td>
+                        <td class="item item2 lottery-unit lottery-unit-5">
+                             50元<br>手机话费
+                        </td>
+                        <td class="gap"></td>
+                        <td class="item lottery-unit lottery-unit-4">
+                             感谢参与
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="shadow"></div>
+
+        </main>
+        
+    </div>
+    <div class="modal modal1">
+        <div class="modal_ct">
+            <div class="modal_info">
+                <p>恭喜中奖啦</p>
+                <h4><span class="money">10</span>元 手机话费</h4>
+            </div>
+            <div class="modal_input">
+                <h5>请填写您要充值的手机号码</h5>
+                <input type="number" placeholder="请输入11位手机号码" class="tel">
+                <p class="hint">请输入手机号</p>
+            </div>
+            <a href="javascript:;" data-url="" class="btn js_submit">提交中奖信息</a>
+        </div>
+    </div>
+    <div class="modal modal2">
+        <div class="modal_ct">
+            <div class="un_sure">
+                <img src="../static/images/mobile/wzj.png" alt="">
+                <p>很遗憾您未中奖，<br>感谢您的参与，祝您生活愉快。</p>
+            </div>
+            <a href="javascript:;" class="btn">确 定</a>
+        </div>
+    </div>
+    <!-- <script src="../../test/layer/mobile/layer.js"></script> -->
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/mobile/prize.js"></script>
+</body>
+
+</html>

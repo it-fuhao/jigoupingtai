@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+@import "../lib/jedate.less"; /* 日期选择插件 */
+@import "../lib/layer.less"; //layer插件
+
+body {
+    background: #EEF0F1;
+}
+
+.content {
+    width: 1040px;
+    padding-top: 14px;
+    margin: 0 auto;
+}
+
+.mod {
+    background: #FFF;
+    margin-bottom: 14px;
+}
+
+.num_mod {  
+    height: 80px;
+    padding: 52px 0;
+
+    hr {
+        float: left;
+        width: 1px;
+        height: 80px;
+        background: #D8D8D8;
+        border: none; 
+    }
+}
+
+.item {
+    float: left;
+    width: 346px; 
+    text-align: center;
+
+    b {
+        display: block;
+        padding-bottom: 20px;
+        font-size: 28px;
+        color: #A8B0B9;
+    }
+
+    &:hover {
+        b {
+           color: #F5A623; 
+       }
+    }
+
+    span {
+        display: block;
+        font-size: 14px;
+        color: #394550;
+    }
+}
+.radio_list {
+    height: 16px;
+    padding: 30px 0 30px 60px;
+
+    i {
+        float: left;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #DEDFE4;
+        border-radius: 10px;
+        margin-right: 6px;
+    }
+
+    span {
+        float: left;
+    }
+
+    a {
+        float: left;
+        line-height: 16px;
+        margin-right: 44px;
+        &.active {
+            i {
+                width: 6px;
+                height: 6px;
+                border: 5px solid #4C9BF2;
+
+            }
+        }
+    }
+}
+.chart_title {
+    .clearfix();
+
+    height: 68px;
+    padding-left: 34px;
+    border-bottom: 1px solid #F2F2F2;
+
+    h6 {
+        float: left;
+        line-height: 68px;
+        font-size: 14px;
+        color: #353538;
+    }
+
+    i {
+        .inline-block();
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        background:  url(~'@{CDN_URL}images/icon.png') no-repeat left -20px;
+    
+    }
+}
+.form_wrap {
+    float: right;
+}
+.time {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 15px;
+
+    input {
+        width: 180px;
+        height: 18px;
+        padding: 10px;
+        margin: 0 10px;
+        background: #F2F4F7 url(~'@{CDN_URL}images/time_icon.png') no-repeat 176px center;
+        border-radius: 4px;
+    }
+}
+.btn {
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin: 14px 14px 0 4px;
+    background: #4C9BF2;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #FFF;
+}
+.chart {
+    width: 824px;
+    height: 410px;
+    padding: 10px 0 40px;
+    margin: 0 auto;
+}

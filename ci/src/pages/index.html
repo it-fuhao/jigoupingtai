@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>首页</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+    <link rel="stylesheet" href="./static/css/index.css">   
+</head>
+<body>
+    <!-- 头部 start -->
+    <div id="header" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育培训机构平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_name">
+                    成都市
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 end -->
+    <!-- 机构申办流程条 start -->
+    <div class="subnav">
+        <div class="subnav_con_jg active">
+            <a class="subnav_con_jg_link active" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="预约"><span>预约</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+        </div>
+    </div>
+    <!-- 机构申办流程条 end -->
+
+
+    <!-- 管理头部 start -->
+    <div id="header" class="header_gl">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育综合管理平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a href="javascript:;">业务办理</a>
+                    <a href="javascript:;">机构列表</a>
+                    <a href="javascript:;">配置管理</a>
+                </div>
+                <div class="header_user_name">
+                    成都市
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 管理头部 end -->
+    <!-- 管理二级导航 start -->
+    <div class="subnav">
+        <div class="subnav_con_gl">
+            <a class="active" href="javascript:;" title="审批办学资格">审批办学资格</a>
+            <a href="javascript:;" title="登记管理">登记管理</a>
+            <a href="javascript:;" title="备案管理">备案管理</a>
+            <a href="javascript:;" title="办学变更">办学变更</a>
+        </div>
+    </div>
+    <!-- 管理二级导航 end -->
+    <!-- 配置管理二级导航 start -->
+    <div class="subnav">
+        <div class="subnav_con_gl">
+            <a class="active" href="javascript:;" title="架构管理">架构管理</a>
+            <a href="javascript:;" title="用户管理">用户管理</a>
+            <a href="javascript:;" title="预约管理">预约管理</a>
+            <a href="javascript:;" title="备案内容管理">备案内容管理</a>
+            <a href="javascript:;" title="办学变更管理">办学变更管理</a>
+        </div>
+    </div>
+    <!-- 配置管理二级导航 end -->
+    <!-- 主体内容 start -->
+    <div id="main">
+        <!-- 管理三级导航 start -->
+        <div class="nav_third">
+            <a class="active" href="javascript:;" title="筹备设立">筹备设立</a>
+            <a href="javascript:;" title="正式设立">正式设立</a>
+            <a href="javascript:;" title="签 到">签 到</a>
+            <a href="javascript:;" title="待发证">待发证</a>
+        </div>
+        <!-- 管理三级导航 end -->
+    </div>
+    <!-- 主体内容 end -->
+
+    <!-- 底部 start -->
+    <div id="footer" class="footer">
+        <div class="footer_text">
+            版权所有：民办教育综合管理平台 京ICP备09003423号 审批资质号：教G-201808324<br>
+技术支持：教育技术管理中心<br>
+地　址：朝阳区花家地南街8号　联系电话：123456
+        </div>
+    </div>
+    <!-- 底部 end -->
+    <script type="text/html" id="App">
+        <template>
+            <br>
+            <br>
+            <button on-click="openWin1">打开弹出层</button>
+            <br>
+            <br>
+            <ui-checkbox s-for="item in list" value="{{ item }}" checked="{= code =}">{{ item }}</ui-checkbox>
+            <br><span>{{ code }}</span>
+            <br>
+            <br>
+            <ui-radio s-for="item in list" value="{{ item }}" checked="{= radio =}">{{ item }}</ui-radio>
+            <ui-radio s-for="item in code" value="{{ item }}" checked="{= radio =}">{{ item }}</ui-radio>
+            <br><span>{{ radio }}</span>
+            <br>
+            <br>
+            <br>
+            <ui-select value="{= radio =}" source="{{ list }}" position="top"/>
+            <ui-select value="{= selectVal =}" source="{{ select }}" keys="{{ selectKeys }}" position="down"/>
+            <ui-cascader value="{= areaValue =}" source="{{ area }}" keys="{{ areaKeys }}" position="down"></ui-cascader>
+            <br>
+            <ui-dialog 
+                show="{= isShow =}" 
+                width="400px" 
+                title="消息提示" 
+                quickClose
+                headOff
+                on-show="onShow" 
+                on-close="onClose" 
+                on-confirm="onConfirm" 
+                on-cancel="onCancel">
+                <div slot="content">自定义内容</div>
+            </ui-dialog>
+            <!-- <ui-dropdown></ui-dropdown> -->
+        </template>
+    </script>
+    <script src="./static/js/vendor.js"></script>
+    <script src="./static/js/common.js"></script>
+    <script src="./static/js/index.js"></script>
+</body>
+</html>

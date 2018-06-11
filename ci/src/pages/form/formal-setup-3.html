@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请办学-正式设立</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/formal-setup.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- 主体内容start -->
+    <div class="main" data-isChange="0" data-nowPage="form3">
+        <div class="tab">
+            <ul>
+                <li><a href="./formal-setup-1.html">基本情况</a><i></i></li>
+                <li><a href="./formal-setup-2.html">培训项目和教材</a><i></i></li>
+                <li class="active"><a href="./formal-setup-3.html">办学场所</a><i></i></li>
+                <li><a href="./formal-setup-4.html">举办者</a><i></i></li>
+                <li><a href="./formal-setup-5-1.html">组织机构</a><i></i></li>
+                <li><a href="./formal-setup-6-1.html">行政领导</a><i></i></li>
+                <li><a href="./formal-setup-7.html">资金资产</a><i></i></li>
+                <li class="no_border"><a href="./formal-setup-8-1.html">教职员工</a><i></i></li>
+            </ul>
+        </div>
+        <div class="ct">
+            <!-- 表单三start -->
+            <div class="ct3">
+                <!-- 空页面 -->
+                <div class="re_page show">
+                    <img src="../static/images/re_page.png" alt="">
+                    <p>您还没有添加任何办学场所，请选择“添加校本部”或者“添加教学点”。</p>
+                </div>
+
+                <!-- 添加按钮盒子 -->
+                <div class="add_box add_box_more m0">
+                    <a href="javascript:;" class="add add1" data-add="tpl_3_1">添加校本部</a>
+                    <a href="javascript:;" class="add add2" data-add="tpl_3_2">添加教学点</a>
+                </div>
+                
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="js_storage">保 存</a>
+            </div>
+                <!-- 表单三end -->
+        </div>
+    </div>
+    <!-- 主体内容end -->
+    <!-- 表单三卡片模板1 -->
+    <script type="text/html" id="tpl_3_1">
+        <!-- `class'场所种类 1校本部2教学点' -->
+        <div class="pub_box tpl_3_1" data-field="1">
+            <div class="pub_title">
+                <h1>
+                    <span class="title">校本部1</span>
+                    <a href="javascript:;" class="kp_del hide" del-id="1">删除</a>
+                </h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box address" data-field="address">
+                    <div class="pc_info">
+                        <p class="input_p">地址:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown_area" data-id=""><span data-field="address_info">请选择</span><i></i></p>
+
+                        <!-- <input type="text" placeholder="请填写详细地址" class="addr_input" data-field="address"> -->
+                    </div>
+                </div>
+                <div class="pc_box" data-field="title">
+                    <div class="pc_info">
+                        <p class="input_p">名称:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="play_type">
+                    <div class="pc_info">
+                        <p>使用权性质:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list scroll">
+                            <li data-id="1">租赁</li>
+                            <li data-id="2">自有</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="play_lease_file">
+                    <div class="pc_info">
+                        <p>租借协议:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="house_code">
+                    <div class="pc_info">
+                        <p class="input_p">房地产权证编号:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="right_file">
+                    <div class="pc_info">
+                        <p>房地产权证:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="right_people">
+                    <div class="pc_info">
+                        <p class="input_p">权利人:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="is_foodplace" data-isNull="1">
+                    <div class="pc_info">
+                        <p class="dan_p">是否自设食堂:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one" data-id="1">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="xiaofang_file">
+                    <div class="pc_info">
+                        <p>消防验收合格证明文件:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="food_file" data-isNull="1">
+                    <div class="pc_info">
+                        <p>食品安全许可证明文件:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="er_title td">
+                    <p>土地</p>
+                    <hr>
+                </div>
+                <div class="pc_box" data-field="land_get_type">
+                    <div class="pc_info">
+                        <p class="input_p">使用权取得方式:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_play_type">
+                    <div class="pc_info">
+                        <p>用途:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">商业用地</li>
+                            <li data-id="2">教育用地</li>
+                            <li data-id="3">综合用地</li>
+                            <li data-id="4">住宅用地</li>
+                            <li data-id="5">其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_area">
+                    <div class="pc_info">
+                        <p class="input_p">占地面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_paly">
+                    <div class="pc_info">
+                        <p class="input_p">使用期限:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="date_input js_time_input1" placeholder="请填写" data-field="land_paly_startdate" readonly>
+                        <span class="wz">-</span>
+                        <input type="text" class="date_input js_time_input2" placeholder="请填写" data-field="land_paly_enddate" readonly>
+                    </div>
+                </div>
+                <div class="er_title jzw">
+                    <p>建筑物</p>
+                    <hr>
+                </div>
+                <div class="pc_box" data-field="teaching_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">教学用房面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="xinzgheng_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">行政用房面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="other_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">其他用房面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="student_bed_num">
+                    <div class="pc_info">
+                        <p class="input_p">学生宿舍床位数:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="sushe_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">宿舍建筑面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="student_bed_area">
+                    <div class="pc_info">
+                        <p class="input_p">生均建筑面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </script>
+    <!-- 表单三卡片模板2 -->
+    <script type="text/html" id="tpl_3_2">
+        <!-- `class'场所种类 1校本部2教学点' -->
+        <div class="pub_box tpl_3_2" data-field="2">
+            <div class="pub_title">
+                <h1>
+                    <span class="title">教学点1</span>
+                    <a href="javascript:;" class="kp_del hide">删除</a>
+                </h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box address" data-field="address">
+                    <div class="pc_info">
+                        <p class="input_p">地址:</p>
+                    </div>
+                    <div class="pc_content">
+                        <!-- <p class="dropdown_area" data-id=""><span data-field="address_info">请选择</span><i></i></p> -->
+
+                        <input type="text" placeholder="请填写详细地址" class="addr_input" data-field="address">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="title">
+                    <div class="pc_info">
+                        <p class="input_p">名称:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="play_type">
+                    <div class="pc_info">
+                        <p>使用权性质:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list scroll">
+                            <li data-id="1">租赁</li>
+                            <li data-id="2">自有</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="play_lease_file">
+                    <div class="pc_info">
+                        <p>租借协议:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="house_code">
+                    <div class="pc_info">
+                        <p class="input_p">房地产权证编号:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="right_file">
+                    <div class="pc_info">
+                        <p>房地产权证:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="right_people">
+                    <div class="pc_info">
+                        <p class="input_p">权利人:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="is_foodplace" data-isNull="1">
+                    <div class="pc_info">
+                        <p class="dan_p">是否自设食堂:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="xiaofang_file">
+                    <div class="pc_info">
+                        <p>消防验收合格证明文件:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="food_file" data-isNull="1">
+                    <div class="pc_info">
+                        <p>食品安全许可证明文件:</p>
+                    </div>
+                    <div class="pc_content">
+                        <div class="preview_box">
+                            <p class="form_input">
+                                <span>未选择任何文件</span>
+                                <a href="javascript:;">期末考试齐文件_01.xls</a>
+                            </p>
+                        </div>
+                        <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                            <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                        </form>
+                        <p class="up_info">最大可上传2MB</p>
+                    </div>
+                </div>
+                <div class="er_title td">
+                    <p>土地</p>
+                    <hr>
+                </div>
+                <div class="pc_box" data-field="land_get_type">
+                    <div class="pc_info">
+                        <p class="input_p">使用权取得方式:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_play_type">
+                    <div class="pc_info">
+                        <p>用途:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">商业用地</li>
+                            <li data-id="2">教育用地</li>
+                            <li data-id="3">综合用地</li>
+                            <li data-id="4">住宅用地</li>
+                            <li data-id="5">其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_area">
+                    <div class="pc_info">
+                        <p class="input_p">占地面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_paly">
+                    <div class="pc_info">
+                        <p class="input_p">使用期限:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly="">
+                        <span class="wz">-</span>
+                        <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly="">
+                    </div>
+                </div>
+                <div class="er_title jzw">
+                    <p>建筑物</p>
+                    <hr>
+                </div>
+                <div class="pc_box" data-field="land_area_total">
+                    <div class="pc_info">
+                        <p class="input_p">总面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="land_area_use">
+                    <div class="pc_info">
+                        <p class="input_p">实际使用面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="teaching_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">教学用房面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" data-field="other_house_area">
+                    <div class="pc_info">
+                        <p class="input_p">其他用房面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </script>
+
+
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+
+</html>

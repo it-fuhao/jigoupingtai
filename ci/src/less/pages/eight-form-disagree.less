@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/**
+ * 八大表单审批页
+ * @authors Abby (abbyyigoog@gmail.com)
+ * @date    2018-05-02 15:18:51
+ * @version $Id$
+ */
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+
+@import "../base/index.less"; /* 通用 */
+
+@import "../layout/index.less";  /* 布局 */
+
+@import "../lib/layer.less"; //layer插件
+
+body {
+    background: #EEF0F1;
+}
+
+#main_box {
+    margin-top: 15px;
+}
+
+.main_box {
+    width: 1040px;
+    margin: 20px auto 50px;
+}
+
+.hint {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #EF4161;
+    letter-spacing: 0;
+}
+
+.main {
+    border: 2px solid #EF4161;
+    padding: 20px 30px 40px;
+    margin: 0 auto 50px;
+    background: #FFF;
+}
+
+.check {
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    margin-top: -8px;
+    background: #FFF;
+    border: 1px solid #D9DBE0;
+    border-radius: 2px;
+}
+
+.check.active {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #EF4161 url(~'@{CDN_URL}images/icon.png') no-repeat 0 0;
+}
+
+.cause {    
+    width: 100%;
+    padding: 10px 0;
+
+
+    &_text {
+        width: 976px;
+        height: 135px;
+        padding: 20px 30px;
+        background: #FFF;
+        border: 2px solid #EF4161;
+        margin-bottom: 40px;
+        font-size: 14px;
+        color: #A8B0B9;
+        letter-spacing: 0;
+        resize: none;
+    }
+
+    &_con {
+        width: 980px;
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+            .inline-block();
+
+            width: 178px;
+            height: 38px;
+            margin: 0 8px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 38px;
+            border: 1px solid #4C9BF2;
+            border-radius: 4px;
+        }
+
+        .cancel {
+            color: #4C9BF2;
+        }
+
+        .submit {
+            background: #4C9BF2;
+            color: #FFF;
+        }
+    }
+}
+
+.tab {
+    width: 980px;
+    padding: 16px 30px 30px;
+    margin: 0 auto 12px;
+    background: #FFF;
+
+    &_con {
+        width: 850px;
+        margin: 30px auto 30px;
+
+        &_title {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #394550;
+            letter-spacing: 0;
+            line-height: 26px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #D9DBE0;
+            margin-bottom: 30px;
+            font-size: 14px;
+            letter-spacing: 0;
+
+            caption {
+                padding-bottom: 10px;
+                text-align: left;
+            }
+        }
+
+        th {
+            position: relative;
+            width: 200px;
+            background: #F2F4F7;
+            border: 1px solid #D9DBE0;
+            color: #394550;
+            font-weight: normal;
+        }
+
+        td {
+            position: relative;
+            padding: 15px 0 15px 20px;
+            border: 1px solid #D9DBE0;
+            color: #67717D;
+
+            a {
+                color: #4C9BF2;
+            }
+        }
+    }
+} 
+
+.vertical_table td {
+    padding-left: 0;
+    text-align: center;
+}

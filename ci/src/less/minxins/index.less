@@ -1,0 +1,111 @@
+// 版心居中
+.area-width() {
+    width: 1080px;
+    margin: 0 auto;
+}
+/* 清除浮动 */
+.clearfix() {
+    *zoom: 1; //IE6,7
+    &:before,
+    &:after {
+        display:table;  
+        content: "";
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+/* 透明度 */
+.opacity(@val) {
+    opacity: @val;
+    @msVal : @val * 100;
+    filter: ~'progid:DXImageTransform.Microsoft.Alpha(Opacity=@{msVal})'; 
+}
+
+/* 精灵图倍数图兼容 */
+.background-image(@img, @img2) {
+    background-image: url(~'@{CDN_URL}@{img}');
+    background-repeat: no-repeat;
+    @media only screen and (min-device-pixel-ratio: 2) { 
+        background-image: url(~'@{CDN_URL}@{img2}');
+        background-size: 50% auto;
+    }
+}
+
+/* 行内块 */
+.inline-block() {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* 文字溢出隐藏 */
+.text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 渐变 */ 
+.gradient(@_, @startColor, @endColor) {
+}
+.gradient(ver, @startColor, @endColor) {
+    //background-color: mix(@startColor, @endColor, 60%);
+    background-image: linear-gradient(top, @startColor, @endColor);
+    background-repeat: repeat-x;
+    filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{startColor}, endColorstr=@{endColor}, GradientType=0)";
+}
+.gradient(hor, @startColor, @endColor) {
+    //background-color: @endColor;
+    background-image: linear-gradient(left, @startColor, @endColor);
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor));
+}
+.gradient(@startColor, @endColor) {
+    .gradient(ver, @startColor, @endColor);
+}
+
+/* 三角箭头 */ 
+.arrow(@_, @width, @height, @color) {
+    border-style: solid;
+    border-color: transparent;
+    *font-size: 0;
+    *line-height: 0;
+    *overflow: hidden;
+    _border-color: tomato;
+    _filter: chroma(color=tomato);
+}
+.arrow(left, @width, @height, @color) {
+    border-width: @width @height;
+    border-right-color: @color;
+}
+.arrow(right, @width, @height, @color) {
+    border-width: @width @height;
+    border-left-color: @color;
+}
+.arrow(top, @width, @height, @color) {
+    border-width: @height @width;
+    border-bottom-color: @color;
+}
+.arrow(bottom, @width, @height, @color) {
+    border-width: @height @width;
+    border-top-color: @color;
+}
+
+/* 按钮基本样式 */
+.btn(@bgcolor, @color) {
+    .inline-block();
+    
+    height: 36px;
+    padding: 0 18px;
+    background-color: @bgcolor;
+    color: @color;
+    line-height: 36px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

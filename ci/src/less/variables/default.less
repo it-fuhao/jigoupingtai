@@ -1,0 +1,40 @@
+/**
+ * 基本配置
+ */
+
+// UI前缀
+@prefix : "ui-";
+
+// 默认
+@font-family: "Helvetica Neue", Microsoft YaHei, "Hiragino Sans GB", "WenQuanYi Micro Hei", Arial, sans-serif;
+@font-size: 14px;
+@line-height: 1.5;
+@code-family :  Consolas, Menlo, Courier, monospace;
+
+// 主题颜色
+@normal-color: #005A84;    //主色调
+@primary-color: #FFF;      //原始
+@default-color: #46AAF8;   //默认
+@warm-color: #FCD64E;      //点缀
+@danger-color: #FF5722;    //警告
+@succeed-color: #27CA83;   //成功
+@error-color: #FF4D6E;     //错误
+@disabled-color: #D9DBE0;  //禁用
+
+// 响应式屏幕
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+// 栅栏
+@grid-gutter-width      : 8px;
+@grid-columns           : 24;
+
+@font-face {
+    font-family: 'iconfont';
+    src: url(~'@{CDN_URL}font/iconfont.eot'); /* IE9*/
+    src: url(~'@{CDN_URL}font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url(~'@{CDN_URL}font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url(~'@{CDN_URL}font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url(~'@{CDN_URL}font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}

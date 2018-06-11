@@ -1,0 +1,16 @@
+/**
+ * 清除浮动
+ */
+ 
+.clearfix() {
+    *zoom: 1; //IE6,7
+    &:before,
+    &:after {
+        display:table;  
+        content: "";
+    }
+    &:after {
+        clear:both;
+    }
+}
+

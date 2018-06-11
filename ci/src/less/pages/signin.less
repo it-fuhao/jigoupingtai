@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/**
+ * 审批列表
+ * @authors Abby (abbyyigoog@gmail.com)
+ * @date    2018-04-26 16:32:32
+ * @version $Id$
+ */
+
+@import "../variables/index.less";
+/* 变量 */
+
+@import "../minxins/index.less";
+/* 混入 */
+
+@import "../base/index.less";
+/* 通用 */
+
+@import "../layout/index.less";
+/* 布局 */
+
+@import "../lib/layer.less"; //layer插件
+
+// @import "../lib/semantic.min.less";
+
+body {
+  background: #EEF0F1;
+}
+
+#main_box {
+  padding-top: 12px;
+}
+
+// div{
+//   box-sizing: border-box;
+// }
+.main {
+  width: 980px;
+  padding: 20px 30px 115px;
+  margin: 0 auto 50px;
+  background: #FFF;
+  // height: 433px;
+}
+
+.tab {
+  // width: 980px;
+  padding: 0px 30px 30px;
+  margin: 0 auto;
+  background: #FFF;
+  &_item {
+    border-left: 1px solid #A8B0B9;
+    border-right: 0;
+    li {
+      .inline-block();
+      width: 135px;
+      height: 38px;
+      border: 1px solid #A8B0B9;
+      border-left: none;
+      font-size: 14px;
+      text-align: center;
+      color: #67717D;
+      letter-spacing: 0;
+      line-height: 38px;
+      cursor: pointer;
+      &.active {
+        color: #FFF;
+        background: #4C9BF2;
+      }
+    }
+    .last {
+      width: 162px;
+    }
+  }
+  &_con {
+    .back{
+      display: inline-block;
+      color: #4C9BF2; 
+      margin-bottom: 12px;
+    }
+    width: 850px;
+    margin: 20px auto 30px;
+    &_title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #394550;
+      letter-spacing: 0;
+      line-height: 26px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #D9DBE0;
+      margin-bottom: 30px;
+      font-size: 14px;
+      letter-spacing: 0;
+      caption {
+        padding-bottom: 10px;
+        text-align: left;
+      }
+    }
+    th {
+      width: 200px;
+      background: #F2F4F7;
+      border: 1px solid #D9DBE0;
+      color: #394550;
+      font-weight: normal;
+    }
+    td {
+      padding: 15px 0 15px 20px;
+      border: 1px solid #D9DBE0;
+      color: #67717D;
+      a {
+        color: #4C9BF2;
+      }
+    }
+  }
+}
+.main_con_btn {
+  display: block;
+  width: 300px;
+  height: 44px;
+  border-radius: 4px;
+  background: #4C9BF2;
+  margin: 0px auto 0;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  letter-spacing: 0;
+}
+.nav_third{
+    background: #EEF0F1;
+    a{
+      background: #fff;
+    }
+}

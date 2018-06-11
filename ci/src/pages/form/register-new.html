@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新建登记</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/register-new.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+<body>
+    <!-- 管理头部 start -->
+    <div id="header" class="header_gl">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育综合管理平台</h1>
+            <div class="header_logo_after">
+                <div class="header_nav">
+                    <a class="active" href="javascript:;">业务办理</a>
+                    <a href="javascript:;">机构列表</a>
+                    <a href="javascript:;">配置管理</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 管理头部 end -->
+    <!-- 管理二级导航 start -->
+    <div class="subnav">
+        <div class="subnav_con_gl">
+            <a href="javascript:;" title="审批办学资格">审批办学资格</a>
+            <a class="active" href="javascript:;" title="登记管理">登记管理</a>
+            <a href="javascript:;" title="备案管理">备案管理</a>
+            <a href="javascript:;" title="办学变更">办学变更</a>
+        </div>
+    </div>
+    <input type="hidden" class="hidden_input" value="123">
+    <div class="main">
+        <div class="dj_title">
+            <a href="javascript:;">返回</a>
+            <h2>新建登记</h2>
+        </div>
+        <div class="dj_ct">
+            <div class="pc_box" id="name">
+                <div class="pc_info">
+                    <p class="input_p">登记名称:</p>
+                </div>
+                <div class="pc_content">
+                    <input type="text" placeholder="请填写">
+                </div>
+            </div>
+            <div class="pc_box" id="date">
+                <div class="pc_info">
+                    <p>起止时间:</p>
+                </div>
+                <div class="pc_content">
+                    <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                    <span class="wz">-</span>
+                    <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                </div>
+            </div>
+            <div class="pc_box" id="area">
+                <div class="pc_info">
+                    <p class="no_margin">其他需登记区域:</p>
+                </div>
+                <div class="pc_content">
+                    <dl class="chose_more">
+                        <dd data-id="1"><i></i><span>金牛区</span></dd>
+                        <dd data-id="2"><i></i><span>青羊区</span></dd>
+                        <dd data-id="3"><i></i><span>锦江区</span></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="js_storage">保 存</a>
+            </div>
+            <div class="pc_box">
+                <div class="pc_info">
+                    <p class="input_p">新建表单:</p>
+                </div>
+                <div class="pc_content">
+                    <div class="dj_add_box">
+                        <input type="text" placeholder="请输入新建的表单名称">
+                        <i class="js_add_dj"></i>
+                    </div>
+                    <div class="form_list_box">
+                        <ul>
+                            <li class="over_assign" data-id="">
+                                <p>2018年成都市年检登记表及附件</p>
+                                <a href="javascript:;" class="edit_dj_form">编辑</a>
+                                <a href="javascript:;" class="del_dj_form">删除</a>
+                                <a href="javascript:;" class="power_dj_form">分配权限</a>
+                            </li>
+                            <li>
+                                <p>2018年成都市年检登记表及附件</p>
+                                <a href="javascript:;" class="edit_dj_form">编辑</a>
+                                <a href="javascript:;" class="del_dj_form">删除</a>
+                                <a href="javascript:;" class="power_dj_form">分配权限</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="btn_box">
+                <a href="javascript:;" class="js_publish">发 布</a>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="../static/js/form/register-new.js"></script>
+
+</body>
+</html>

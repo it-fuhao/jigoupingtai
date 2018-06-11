@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请办学-正式设立</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/formal-setup.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- 主体内容start -->
+    <div class="main" data-isChange="0" data-nowPage="form7">
+        <div class="tab">
+            <ul>
+                <li><a href="./formal-setup-1.html">基本情况</a><i></i></li>
+                <li><a href="./formal-setup-2.html">培训项目和教材</a><i></i></li>
+                <li><a href="./formal-setup-3.html">办学场所</a><i></i></li>
+                <li><a href="./formal-setup-4.html">举办者</a><i></i></li>
+                <li><a href="./formal-setup-5-1.html">组织机构</a><i></i></li>
+                <li><a href="./formal-setup-6-1.html">行政领导</a><i></i></li>
+                <li class="active"><a href="./formal-setup-7.html">资金资产</a><i></i></li>
+                <li class="no_border"><a href="./formal-setup-8-1.html">教职员工</a><i></i></li>
+            </ul>
+        </div>
+                <input type="hidden" id="addCheck" value="3">
+
+        <div class="ct">
+            <div class="ct7">
+                <div class="pub_box" data-id="1">
+                    <div class="pub_title">
+                        <h1>开户许可证相关信息</h1>
+                    </div>
+                    <div class="pub_form_box">
+                        <div class="pc_box" data-field="bank_code">
+                            <div class="pc_info">
+                                <p class="input_p">银行开户许可证编号:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_title">
+                            <div class="pc_info">
+                                <p class="input_p">开户银行:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_account">
+                            <div class="pc_info">
+                                <p class="input_p">账号:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_cer_unit">
+                            <div class="pc_info">
+                                <p class="input_p">开户许可证发证机关:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_cer_date">
+                            <div class="pc_info">
+                                <p class="input_p">开户许可证发证日期:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写" class="js_time_input1" readonly>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="bank_cer_file">
+                            <div class="pc_info">
+                                <p>开户许可证:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="finance_cer_file">
+                            <div class="pc_info">
+                                <p>财务章:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="invoice_cer_file">
+                            <div class="pc_info">
+                                <p>发票章:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="tangible_money">
+                            <div class="pc_info">
+                                <p class="input_p">举办者办学出资有形资产:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="invisible_money">
+                            <div class="pc_info">
+                                <p class="input_p">举办者办学出资无形资产:</p>
+                            </div>
+                            <div class="pc_content">
+                                <input type="text" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="Intangible_money">
+                            <div class="pc_info">
+                                <p>资产评估机构的评估报告:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        <div class="pc_box" data-field="school_money_file">
+                            <div class="pc_info">
+                                <p>学校开办资金验资报告:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="pub_box tpl_7_2">
+                    <div class="pub_title">
+                        <h1>年度审计报告相关信息</h1>
+                    </div>
+                    <div class="pub_form_box">
+                        <div class="er_title table_hr873">
+                            <hr>
+                            <a href="javascript:;" class="add_table">新增</a>
+                        </div>
+                        <div class="pc_box" data-field="money_part">
+                            <table border="1" cellspacing="0" border-spacing="0" class="tb3">
+                                <tr>
+                                    <th><p>选择年度</p></th>
+                                    <th><p>流动资产<br>合计</p></th>
+                                    <th><p>固定资产合<br>计（净值）</p></th>
+                                    <th><p>负债合计</p></th>
+                                    <th><p>净资产合计</p></th> 
+                                    <th><p>业务收入<br>合计</p></th>
+                                    <th><p>业务成本<br>合计</p></th>
+                                    <th><p>税金合计</p></th>
+                                    <th><p>费用合计</p></th>
+                                    <th class="remove_style"><p>操作</p></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><input type="text" placeholder="请输入"></td>
+                                    <td><a href="javascript:;" class="remove_table">删除</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pc_box" data-field="asset_audit_file">
+                            <div class="pc_info">
+                                <p>请上传上一年度审计报告:</p>
+                            </div>
+                            <div class="pc_content">
+                                <div class="preview_box">
+                                    <p class="form_input">
+                                        <span>未选择任何文件</span>
+                                        <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                    </p>
+                                </div>
+                                <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                    <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                </form>
+                                <p class="up_info">最大可上传2MB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <a href="javascript:;" class="js_storage">保 存</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容end -->
+
+
+
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>预约</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+    <!-- <link rel="stylesheet" href="../static/css/approval-list.css"> -->
+    <link rel="stylesheet" href="../static/css/appointment.css">
+
+</head>
+
+<body>
+    <!-- 机构头部 start -->
+    <div id="header" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a class="active" href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 机构头部 end -->
+    <!-- 机构申办流程条 start -->
+    <div class="subnav">
+        <div class="subnav_con_jg active">
+            <a class="subnav_con_jg_link active" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+            <a class="subnav_con_jg_link active" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="预约"><span>预约</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+        </div>
+    </div>
+    <!-- 机构申办流程条 end -->
+
+    <!-- 主体内容 start -->
+    <div id="main_box">
+
+        <div class="main date-time-select">
+            <div class="sectiont-title">
+                <div class="title">选择预约时间</div>
+            </div>
+            <div class="nav-week">
+                <a href="javascript:;" class="last-week disabled">
+                    <!-- <img src="../static/images/left-arrow-disabled.png" alt=""> -->
+                    <span>上一周</span>
+                </a>
+                |
+                <a href="javascript:;" class="next-week">
+                    <span>下一周</span>
+                    <!-- <img src="../static/images/right-arrow.png" alt="">  -->
+                </a>
+            </div>
+            <div class="tab">
+                <!-- 一周 start -->
+                <div class="tab_con active">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2" class="date-time">
+                                    <span>日期</span>
+                                    <br/>
+                                    <span class="date">时间</span>
+                                </th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th class="disabled">星期六</th>
+                                <th class="disabled">星期日</th>
+                            </tr>
+                            <tr>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:00-10:00</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment" data-id="1"><span>点击预约</span></td>
+                                <td class="selected">
+                                    <span>已选择</span></td>
+                                <td class="appointment" data-id="1"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00-11:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">
+                                    <span class="appointment-info">点击预约</span></td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00-12:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:00-14:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:00-15:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 一周 end -->
+                <!-- 一周 start -->
+                <div class="tab_con">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2" class="date-time">
+                                    <span>日期</span>
+                                    <br/>
+                                    <span class="date">时间</span>
+                                </th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th class="disabled">星期六</th>
+                                <th class="disabled">星期日</th>
+                            </tr>
+                            <tr>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:00-10:00</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="selected">
+                                    <span>已选择</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00-11:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">
+                                    <span class="appointment-info">点击预约</span></td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00-12:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:00-14:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:00-15:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 一周 end -->
+                <!-- 一周 start -->
+                <div class="tab_con">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2" class="date-time">
+                                    <span>日期</span>
+                                    <br/>
+                                    <span class="date">时间</span>
+                                </th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th class="disabled">星期六</th>
+                                <th class="disabled">星期日</th>
+                            </tr>
+                            <tr>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:00-10:00</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="selected">
+                                    <span>已选择</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00-11:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">
+                                    <span class="appointment-info">点击预约</span></td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00-12:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:00-14:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:00-15:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 一周 end -->
+                <!-- 一周 start -->
+                <div class="tab_con">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2" class="date-time">
+                                    <span>日期</span>
+                                    <br/>
+                                    <span class="date">时间</span>
+                                </th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th>星期一</th>
+                                <th class="disabled">星期六</th>
+                                <th class="disabled">星期日</th>
+                            </tr>
+                            <tr>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                                <td class="date disabled">4月30日</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:00-10:00</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="selected">
+                                    <span>已选择</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00-11:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">
+                                    <span class="appointment-info">点击预约</span></td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00-12:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:00-14:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:00-15:00</td>
+                                <td class="appointmented">已约满</td>
+                                <td class="appointment">点击预约</td>
+                                <td class="appointmented"><span>已约满</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="appointment"><span>点击预约</span></td>
+                                <td class="disabled">- -</td>
+                                <td class="disabled">- -</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 一周 end -->
+            </div>
+        </div>
+        <div class="main">
+            <div class="sectiont-title">
+                <div class="title">预约人信息</div>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">联系人姓名:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" id="js_name" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">联系人电话:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" id="js_tel" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">在该学校／机构担任的职务:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" id="js_job" placeholder="请填写">
+                    </div>
+                </div>
+                <a class="main_con_btn" id="js_submit" href="javascript:;">确认预约</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+    <!-- 底部 start -->
+    <div id="footer" class="footer">
+        <div class="footer_text">
+            版权所有：民办教育综合管理平台 京ICP备09003423号 审批资质号：教G-201808324
+            <br> 技术支持：教育技术管理中心
+            <br> 地　址：朝阳区花家地南街8号　联系电话：123456
+        </div>
+    </div>
+    <!-- 底部 end -->
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/subscribe/appointment.js"></script>
+</body>
+
+</html>

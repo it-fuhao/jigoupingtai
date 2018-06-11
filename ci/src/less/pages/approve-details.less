@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/**
+ * 审批列表
+ * @authors Abby (abbyyigoog@gmail.com)
+ * @date    2018-04-26 16:32:32
+ * @version $Id$
+ */
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+
+@import "../base/index.less"; /* 通用 */
+
+@import "../layout/index.less";  /* 布局 */
+
+
+.main {
+
+    &_title {
+        .clearfix();
+
+        padding-bottom: 30px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #394550;
+        letter-spacing: 0;
+        line-height: 26px;
+
+        h3 {
+            float: left;
+            
+        }
+
+        &_tab {
+            float: right;
+            margin-right: 65px;
+            
+            i {
+                float: left;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #D9DBE0;
+                border-radius: 100%;
+                margin-top: 6px;
+                margin-right: 6px;
+            }
+
+            span {
+                float: left;
+            }
+
+            a {
+                float: left;
+                margin-left: 20px;
+
+                &.active i {
+                    width: 4px;
+                    height: 4px;
+                    border: 6px solid #13aaf8;  
+                }
+            }
+        }
+    }
+
+    &_con {
+        width: 980px;
+        margin: 0 auto;
+
+        &_table {
+            width: 100%;
+            border: 1px solid #fff;
+            
+            th,td {
+                padding: 12px 0;
+                border: 1px solid #fff;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 14px;
+            }
+
+            th {
+                text-align: center;
+                background: #A8B0B9;
+                color: #fff; 
+                font-weight: normal; 
+                padding: 22px 0;
+            }
+
+            td {
+                padding: 12px;
+                text-align: center;
+                background: #F2F4F7;
+            }
+            
+            a {
+                color: #4C9BF2;
+            }
+
+        }
+    }
+
+} 
+.pagination {
+    margin-right: 64px;
+}
+
+
+
+body{
+    background-color: #eef0f3;
+}
+.city_header{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(-180deg, #213284 0%, #29376B 100%);
+    .wrap{
+        width: 1080px;
+        margin: 0 auto;
+        line-height: 70px;
+        h1{
+            float: left;
+            font-size: 20px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+        .header_box{
+
+            float: right;
+
+            a{
+                display: inline-block;
+                margin-left: 25px;
+                text-align: right;
+                font-size: 14px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+            }
+        }
+        
+    }
+}
+.city_tab{
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    ul{
+        width: 1040px;
+        margin: 0 auto;
+        .clearfix();
+        li{
+            float: left;
+            line-height: 50px;
+            a{
+                display: block;
+                padding: 0 30px;
+                font-size: 14px;
+                color: #394550;
+                letter-spacing: 0;
+            }
+        }
+        .active{
+            background: #4C9BF2;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+.content{
+    width: 1040px;
+    margin-top: 12px;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.dj_title{
+    height: 50px;
+    line-height: 50px;
+    a{
+        position: absolute;
+        font-size: 16px;
+        color: #4C9BF2;
+        margin-left: 30px;
+    }
+    h2{
+        text-align: center;
+        font-size: 16px;
+        color: #394550;
+        margin: 0 auto;
+    }
+}

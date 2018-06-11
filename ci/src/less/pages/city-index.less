@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+
+
+body{
+    background: url('@{CDN_URL}images/big_bg.png') no-repeat;
+    background-size: cover;
+}
+.header{
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .clearfix();
+    a{
+        display: block;
+        float: right;
+        font-size: 14px;
+        color: #3566FF;
+        letter-spacing: 0;
+    }
+}
+.title_box{
+    
+    margin-top: 50px;
+    margin-bottom: 86px;
+    h1{
+        font-size: 40px;
+        color: #023C6B;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+.main{
+    text-align: center;
+    a{
+        display: inline-block;
+        width: 290px;
+        height: 342px;
+        background: url('@{CDN_URL}images/liu_bg.png') no-repeat;
+        background-size: contain;
+        p{
+            font-size: 20px;
+            color: #0C147C;
+            margin-top: 27px;
+        }
+    }
+    a:hover{
+        background: url('@{CDN_URL}images/liu_bg_x.png') no-repeat;
+        p{
+            color: #fff;
+        }
+    
+    }
+    .area{
+        i{
+            width: 55px;
+            height: 71px;
+            display: block;
+            margin: 0 auto;
+            background: url('@{CDN_URL}images/liu_img.png') no-repeat;
+            margin-top: 89px;
+        }
+    }
+    .city{
+        i{
+            width: 71px;
+            height: 65px;
+            display: block;
+            margin: 0 auto;
+            background: url('@{CDN_URL}images/liu_img2.png') no-repeat;
+            margin-top: 91px;
+        }   
+    }
+    .area:hover{
+        i{
+            background: url('@{CDN_URL}images/liu_img_x.png') no-repeat;
+        }
+    }
+    .city:hover{
+        i{
+            background: url('@{CDN_URL}images/liu_img2_x.png') no-repeat;
+        }
+    }
+
+}

@@ -1,0 +1,73 @@
+
+/* 渐显渐隐 */
+.fade-enter {
+    animation: fade .15s ease;
+}
+.fade-leave {
+    animation: fade .15s ease;
+    animation-direction:  reverse;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+/* 从上渐显进入 */
+.fadeTop-enter {
+    animation: fadeTop .15s ease;
+}
+.fadeTop-leave {
+    animation: fadeTop .15s ease;
+    animation-direction:  reverse;
+}
+
+@keyframes fadeTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+/* 向下弹出 */
+.dropDown-enter {
+    animation: dropDown .15s ease;
+}
+.dropDown-leave {
+    animation: dropDown .15s ease;
+    animation-direction:  reverse;
+}
+
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: 0% 0%;
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 0% 0%;
+        transform: scaleY(1);
+    }
+}
+
+/* 向上弹出 */
+.dropTop-enter {
+    animation: dropTop .15s ease;
+}
+.dropTop-leave {
+    animation: dropTop .15s ease;
+    animation-direction:  reverse;
+}
+@keyframes dropTop {
+   0% {
+        opacity: 0;
+        transform-origin: 100% 100%;
+        transform: scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 100% 100%;
+        transform: scaleY(1);
+    }
+}

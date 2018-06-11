@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+
+body {
+    background: #EEF0F1;
+}
+
+.content {
+    width: 1040px;
+    padding-top: 14px;
+    margin: 0 auto;
+}
+
+.mod {
+    background: #FFF;
+    margin-bottom: 14px;
+}
+
+.statis_title {
+    .clearfix();
+
+    // height: 62px;
+    padding: 26px 0 0;
+    padding-left: 34px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.radio_list {
+    height: 16px;
+    padding-bottom: 30px;
+
+    i {
+        float: left;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #DEDFE4;
+        border-radius: 10px;
+        margin-right: 6px;
+    }
+
+    span {
+        float: left;
+    }
+
+    a {
+        float: left;
+        line-height: 16px;
+        margin-right: 44px;
+        &.active {
+            i {
+                width: 6px;
+                height: 6px;
+                border: 5px solid #4C9BF2;
+
+            }
+        }
+    }
+}
+
+.check_list {
+    i {
+        float: left;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #DEDFE4;
+        margin-right: 6px;
+    }
+
+    span {
+        float: left;
+    }
+
+    a {
+        float: left;
+        line-height: 16px;
+        margin-right: 44px;
+        &.active {
+            i {
+                width: 14px;
+                height: 14px;
+                background: #4C9BF2 url(../images/check_icon.png) no-repeat left 0;
+                background-size: cover;
+                border: 1px solid #4C9BF2;
+            }
+        }
+    }
+}
+.chart_wrap_mod {
+    width: 1000px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.chart_title {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+
+    h4 {
+        .inline-block();
+        border-bottom: 3px solid #4C9BF2;
+    }
+}
+.chart_wrap {
+    .clearfix();
+
+    padding-top: 20px; 
+    text-align: center;
+}
+
+.chart {
+    .inline-block();
+
+    width: 496px;
+    height: 360px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+// #charts1,#charts3 {
+//     border-right: 1px solid #F2F2F2;
+// }

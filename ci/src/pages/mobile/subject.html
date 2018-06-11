@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            (function(){
+                var pixRatio = 1/window.devicePixelRatio;
+                var meta = document.createElement('meta');
+                //console.log(pixRatio);
+                meta.name = 'viewport';
+                meta.content = 'width=device-width,user-scalable=no,initial-scale='+pixRatio+',minimum-scale='+pixRatio+',maximum-scale='+pixRatio+'';
+                document.head.appendChild(meta);    
+            })();
+            (function(){
+                
+                var html = document.documentElement;
+                //var htmlWidth = html.getBoundingClientRect().width;
+                var htmlWidth = html.clientWidth;
+                html.style.fontSize = htmlWidth/15 +'px';
+            })();
+        </script>
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <title>成都市学科类校外培训情况普查登记</title>
+        <link rel="stylesheet" href="../static/css/info.css">
+    </head>
+    <body>
+        <!-- 头部 start -->
+        <div class="title">
+            <h1>成都市学科类校外培训情况普查登记</h1>
+        </div>
+        <!-- 头部 end -->
+        <!-- 问卷内容 start -->
+        <input type="hidden" id="wx_token" value="">
+        <input type="hidden" id="has_else_qs" value="1">
+        <div id="content" class="content">
+            <div class="wrap">
+                <dl class="list qs_chose_more" data-id="reason" data-d="">
+                    <dt><b>参加培训原因：</b>(可多选)
+                        <s>*</s>
+                    </dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>自身学习需要，在这门课上还需要查漏补缺或进一步提高</span></p>
+                        <p><i></i><span>爸妈没时间辅导学习而报班</span></p>
+                        <p><i></i><span>学校老师推荐的</span></p>
+                        <p><i></i><span>学校老师要求报的，因为老师部分内容上课不讲而到培训机构（家教）里才讲，所以只能报了</span></p>
+                        <p><i></i><span>因为要升学，培训机构又刚好开设了针对升学的班，所以参加</span></p>
+                    </dd>
+                </dl>
+                
+                <dl class="list qs_chose_more" data-id="subject" data-d="">
+                    <dt><b>所参加的校外培训科目：</b>(可多选)<s>*</s></dt>
+                    <dd class="grid" id="subject">
+                        <span>语文</span>
+                        <span>数学</span>
+                        <span>外语</span>
+                        <span>物理</span>
+                        <span>化学</span>
+                        <span>生物</span>
+                        <span>历史</span>
+                        <span>地理</span>
+                        <span>政治</span>
+                        <span>奥数</span>
+                        <span>体育</span>
+                        <span>美术</span>
+                        <span>音乐</span>
+                        <span>其他</span>
+                    </dd>
+                </dl>
+            </div>
+            <a class="submit" id="js_submit" data-url="./info.html" href="javascript:;" title="">下一步</a> 
+        </div>
+        <!-- 问卷内容 end --> 
+        <script src="../static/js/vendor.js"></script>
+        <script src="../static/js/common.js"></script>
+        <script src="../static/js/mobile/info.js"></script>  
+    </body>
+</html>    
+

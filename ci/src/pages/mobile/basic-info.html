@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            (function(){
+                var pixRatio = 1/window.devicePixelRatio;
+                var meta = document.createElement('meta');
+                //console.log(pixRatio);
+                meta.name = 'viewport';
+                meta.content = 'width=device-width,user-scalable=no,initial-scale='+pixRatio+',minimum-scale='+pixRatio+',maximum-scale='+pixRatio+'';
+                document.head.appendChild(meta);    
+            })();
+            (function(){
+                
+                var html = document.documentElement;
+                //var htmlWidth = html.getBoundingClientRect().width;
+                var htmlWidth = html.clientWidth;
+                html.style.fontSize = htmlWidth/15 +'px';
+            })();
+        </script>
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <title>成都市学科类校外培训情况普查登记</title>
+        <link rel="stylesheet" href="../static/css/info.css">
+    </head>
+    <body>
+        <!-- 头部 start -->
+        <div class="title">
+            <h1>成都市学科类校外培训情况普查登记</h1>
+        </div>
+        <!-- 头部 end -->
+        <!-- 问卷内容 start -->
+        <input type="hidden" id="wx_token" value="">
+        <div id="content" class="content">
+            <div class="wrap">
+                <dl class="list qs_input" data-id="name">
+                    <dt><b>学生姓名：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="text" placeholder="请尽量填写全称">
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one" data-id="sex">
+                    <dt><b>学生性别：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>男</span></p>
+                        <p><i></i><span>女</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list" data-id="area_id">
+                    <dt><b>学校所在区县：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg">
+                        <p class="select" id="area_trigger">请选择学校所在区县</p>
+                        <!-- <input class="select" id="area_trigger" type="text" placeholder="请选择学校所在区县" value="" readonly> -->
+                    </dd>
+                </dl>
+
+                <dl class="list" data-id="street_id">
+                    <dt><b>学校所在乡镇/街道：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg">
+                        <p class="select" id="town_trigger" >请选择学校所在乡镇/街道</p>
+                        <!-- <input class="select" id="town_trigger" type="text" placeholder="请选择学校所在乡镇/街道" value="" readonly> -->
+                    </dd>
+                </dl>
+
+                <dl class="list" data-id="school_id">
+                    <dt><b>学校名称：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg">
+                        <p class="select" id="school_trigger">请选择学校</p>
+                        
+                        <!-- <input class="select" id="school_trigger" type="text" placeholder="请选择学校" readonly> -->
+                    </dd>
+                </dl>
+                <dl class="list qs_chose_one" data-id="section">
+                    <dt><b>学段：</b>(单选题)
+                        <s>*</s>
+                    </dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>小学</span></p>
+                        <p><i></i><span>初中</span></p>
+                        <p><i></i><span>高中</span></p>
+                    </dd>
+                </dl>
+                <dl class="list qs_chose_one" data-id="grade">
+                    <dt><b>学生所在年级：</b>(单选题)<s>*</s></dt>
+                    <dd class="grid" id="grade">
+                        <span>一年级</span>
+                        <span>二年级</span>
+                        <span>三年级</span>
+                        <span>四年级</span>
+                        <span>五年级</span>
+                        <span>六年级</span>
+                        <span class="no_lh">七年级<br>（初一）</span>
+                        <span class="no_lh">八年级<br>（初二）</span>
+                        <span class="no_lh">九年级<br>（初三）</span>
+                        <span>高一</span>
+                        <span>高二</span>
+                        <span>高三</span>
+                    </dd>
+                </dl>
+                <!-- <dl class="list qs_chose_one" data-id="section">
+                    <dt><b>学生所在年级：</b>(单选题)
+                        <s>*</s>
+                    </dt>
+                    <dd class="grid" id="section">
+                        <span>一年级</span>
+                        <span>二年级</span>
+                        <span>三年级</span>
+                    </dd>
+                </dl> -->
+                <dl class="list qs_input" data-id="class">
+                    <dt><b>学生所在班级：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="text" placeholder="请填写学生所在班级">
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one" id="is_out_school" data-id="is_out_school">
+                    <dt><b>是否参加校外培训：</b><s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>是</span></p>
+                        <p><i></i><span>否</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 接口 -->
+            <a class="submit" id="js_submit" data-url="./subject.html" href="javascript:;" title="">下一步</a> 
+        </div>
+        <!-- 问卷内容 end -->
+        <script src="../../test/data.js"></script>
+        <script src="../static/js/vendor.js"></script>
+        <script src="../static/js/common.js"></script>
+        <script src="../static/js/mobile/info.js"></script>  
+    </body>
+</html>    

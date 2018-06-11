@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>完善法人信息</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/formal-setup.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <input type="hidden" id="addCheck" value="">
+<!-- 头部 start -->
+<div id="header1" class="header_jg">
+    <div class="header_area">
+        <h1 class="header_logo">民办教育机构平台</h1>
+        <div class="header_logo_after">
+            <div class="header_nav">
+                <a class="active" href="javascript:;">申请办学</a>
+                <a href="javascript:;">登记管理</a>
+                <a href="javascript:;">备案管理</a>
+                <a href="javascript:;">办学变更</a>
+            </div>
+            <div class="header_user_link">
+                <a href="javascript:;">修改密码</a>
+                <a href="javascript:;">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 头部 end -->
+<!-- 机构申办流程条 start -->
+<div class="subnav">
+    <div class="subnav_con_jg active">
+        <a class="subnav_con_jg_link active" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+        <a class="subnav_con_jg_link active" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+        <a class="subnav_con_jg_link active" href="javascript:;" title="预约"><span>预约</span></a>
+        <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+    </div>
+</div>
+<!-- 机构申办流程条 end -->
+    <!-- 主体内容start -->
+    <!-- 备注：info1_1 || info1_2 选其一 另一个删掉 -->
+    <div class="main">
+        
+
+        <div class="ct perfect_info1">
+            <div class="tab3">
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="dan_p">是否三证合一 :</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1" data-info="info1_1"><i></i><span>是</span></dd>
+                            <dd data-id="2" data-info="info1_2" class="active"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                
+                <div class="info1_2">
+                    <div class="pub_box">
+                        <div class="pub_title">
+                            <h1>法人登记证相关信息</h1>
+                        </div>
+                        <div class="pub_form_box">
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="dan_p">法定代表人:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <dl class="chose_one">
+                                        <dd data-id="1"><i></i><span>决策机构负责人</span></dd>
+                                        <dd data-id="2"><i></i><span>校长</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">法人登记证有效期:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                                    <span class="wz">-</span>
+                                    <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">法人登记证号:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">注册资金（万元）:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">法人登记管理机关:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">法人登记证发证日期:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写" class="js_time_input1" readonly>
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">住所:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" class="long_input" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p>法人登记证:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <div class="preview_box">
+                                        <p class="form_input">
+                                            <span>未选择任何文件</span>
+                                            <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                        </p>
+                                    </div>
+                                    <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                        <a href="javascript:;" class="file_btn">
+                                        <span>上传文件</span>
+                                        <input type="file" class="js_upload" name="file" data-id="">
+                                    </a>
+                                    </form>
+                                    <p class="up_info">最大可上传2MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub_box">
+                        <div class="pub_title">
+                            <h1>组织机构代码证相关信息</h1>
+                        </div>
+                        <div class="pub_form_box">
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">组织机构代码:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">组织机构代码证有效期:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                                    <span class="wz">-</span>
+                                    <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">机构名称:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">组织机构代码证颁发单位:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">组织机构代码证登记号:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p>组织机构代码证:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <div class="preview_box">
+                                        <p class="form_input">
+                                            <span>未选择任何文件</span>
+                                            <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                        </p>
+                                    </div>
+                                    <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                        <a href="javascript:;" class="file_btn">
+                                            <span>上传文件</span>
+                                            <input type="file" class="js_upload" name="file" data-id="">
+                                        </a>
+                                    </form>
+                                    <p class="up_info">最大可上传2MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub_box">
+                        <div class="pub_title">
+                            <h1>税务登记证相关信息</h1>
+                        </div>
+                        <div class="pub_form_box">
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">税务登记证号:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">纳税人名称:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">扣税义务:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p class="input_p">组织机构代码证登记号:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <input type="text" placeholder="请填写">
+                                </div>
+                            </div>
+                            <div class="pc_box">
+                                <div class="pc_info">
+                                    <p>三证合一后证件:</p>
+                                </div>
+                                <div class="pc_content">
+                                    <div class="preview_box">
+                                        <p class="form_input">
+                                            <span>未选择任何文件</span>
+                                            <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                        </p>
+                                    </div>
+                                    <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                        <a href="javascript:;" class="file_btn">
+                                            <span>上传文件</span>
+                                            <input type="file" class="js_upload" name="file" data-id="">
+                                        </a>
+                                    </form>
+                                    <p class="up_info">最大可上传2MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="js_storage">保 存</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容end -->
+    
+    <!-- 是三证合一 -->
+    <script type="text/html" id="info1_1">
+        <div class="info1_1">
+            <div class="pub_box">
+                <div class="pub_title">
+                    <h1>三证合一相关信息</h1>
+                </div>
+                <div class="pub_form_box">
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">统一代码:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">发证机关:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">发证日期:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写" class="js_time_input1" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">有效期限:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                            <span class="wz">-</span>
+                            <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">名称:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">住所:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="long_input" placeholder="请填写">
+                        </div>
+                    </div>
+                    
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">法定代表人:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">开办资本（万元）:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">业务主管单位:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>业务范围:</p>
+                        </div>
+                        <div class="pc_content">
+                            <textarea cols="30" rows="10" placeholder="请填写"></textarea>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>三证合一后证件:</p>
+                        </div>
+                        <div class="pc_content">
+                            <div class="preview_box">
+                                <p class="form_input">
+                                    <span>未选择任何文件</span>
+                                    <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                </p>
+                            </div>
+                            <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                            </form>
+                            <p class="up_info">最大可上传2MB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </script>
+    
+    <!-- 不是三证合一 -->
+    <script type="text/html" id="info1_2">
+        <div class="info1_2">
+            <div class="pub_box">
+                <div class="pub_title">
+                    <h1>法人登记证相关信息</h1>
+                </div>
+                <div class="pub_form_box">
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="dan_p">法定代表人:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>决策机构负责人</span></dd>
+                                <dd data-id="2"><i></i><span>校长</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">法人登记证有效期:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                            <span class="wz">-</span>
+                            <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">法人登记证号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">注册资金（万元）:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">法人登记管理机关:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">法人登记证发证日期:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写" class="js_time_input1" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">住所:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="long_input" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>法人登记证:</p>
+                        </div>
+                        <div class="pc_content">
+                            <div class="preview_box">
+                                <p class="form_input">
+                                    <span>未选择任何文件</span>
+                                    <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                </p>
+                            </div>
+                            <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                <a href="javascript:;" class="file_btn">
+                                <span>上传文件</span>
+                                <input type="file" class="js_upload" name="file" data-id="">
+                            </a>
+                            </form>
+                            <p class="up_info">最大可上传2MB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pub_box">
+                <div class="pub_title">
+                    <h1>组织机构代码证相关信息</h1>
+                </div>
+                <div class="pub_form_box">
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">组织机构代码:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">组织机构代码证有效期:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                            <span class="wz">-</span>
+                            <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">机构名称:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">组织机构代码证颁发单位:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">组织机构代码证登记号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>组织机构代码证:</p>
+                        </div>
+                        <div class="pc_content">
+                            <div class="preview_box">
+                                <p class="form_input">
+                                    <span>未选择任何文件</span>
+                                    <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                </p>
+                            </div>
+                            <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                <a href="javascript:;" class="file_btn">
+                                    <span>上传文件</span>
+                                    <input type="file" class="js_upload" name="file" data-id="">
+                                </a>
+                            </form>
+                            <p class="up_info">最大可上传2MB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pub_box">
+                <div class="pub_title">
+                    <h1>税务登记证相关信息</h1>
+                </div>
+                <div class="pub_form_box">
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">税务登记证号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">纳税人名称:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">扣税义务:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">组织机构代码证登记号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>三证合一后证件:</p>
+                        </div>
+                        <div class="pc_content">
+                            <div class="preview_box">
+                                <p class="form_input">
+                                    <span>未选择任何文件</span>
+                                    <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                </p>
+                            </div>
+                            <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                <a href="javascript:;" class="file_btn">
+                                    <span>上传文件</span>
+                                    <input type="file" class="js_upload" name="file" data-id="">
+                                </a>
+                            </form>
+                            <p class="up_info">最大可上传2MB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>          
+                    
+    </script>
+
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+
+</html>

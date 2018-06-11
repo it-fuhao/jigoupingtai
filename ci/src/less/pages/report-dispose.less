@@ -1,0 +1,119 @@
+
+
+@charset "UTF-8";
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+@import "../base/index.less"; /* 通用 */
+@import "../layout/index.less";  /* 布局 */
+
+
+@import "../lib/layer.less"; //layer插件
+@import "../lib/jedate.less"; //日期选择插件
+
+@import "../pages/approval-list.less"; //表格样式
+
+body{
+  background-color: #EEF0F1;
+}
+.main{
+  width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 12px 30px;
+  margin-top:10px;
+
+}
+
+.dj_title_box{
+  width: 848px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  .clearfix();
+  h1{
+	font-size: 16px;
+	color: #394550;
+	float: left;
+	line-height: 34px;
+  }
+  a{
+	display: block;
+	float: right;
+	border-radius: 4px;
+	width: 120px;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	text-indent: 44px;
+	background: #4C9BF2 url('@{CDN_URL}images/add_white_icon.png') no-repeat left 20px center;
+  }
+}
+.pc_content{
+   //float: right;
+  .clearfix();
+}
+.dj_count_box{
+  width: 980px;
+  height: 50px;
+  line-height: 36px;
+  margin: 0 auto;
+  border-bottom: 1px solid #D9DBE0;
+  .clearfix();
+  a{
+	width: 20%;
+	float: left;
+	font-size: 16px;
+	color: #4C9BF2;
+  }
+  p{
+	width: 20%;
+	float: right;
+	font-size: 14px;
+	color: #394550;
+	text-align: right;
+  }
+  h2{
+	width: 60%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	color: #394550;
+  }
+}
+.chose_one{
+  float: left;
+  .clearfix();
+  margin-top: 20px;
+  margin-left:-74px;
+  dd{
+	float: left;
+	cursor: pointer;
+	margin-left: 20px;
+	i{
+	  width: 15px;
+	  height: 15px;
+	  display: inline-block;
+	  *zoom: 1;
+	  *display: inline;
+	  background: url('@{CDN_URL}images/chose_one.png') no-repeat;
+	  vertical-align: middle;
+	  margin-right: 6px;
+	}
+	span{
+	  font-size: 14px;
+	  color: #394550;
+	  letter-spacing: 0;
+	  vertical-align: middle;
+	}
+  }
+  .active{
+	i{
+	  background: url('@{CDN_URL}images/chose_one_x.png') no-repeat;
+	}
+  }
+}
+.main_con_table{
+  margin-top: 20px;
+}
+.processed{
+  display:none;
+}

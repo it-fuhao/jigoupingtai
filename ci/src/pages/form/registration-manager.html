@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>自建表单</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/registration-manager.css">   
+</head>
+<style>
+
+</style>
+<body>
+    <!-- 管理头部 start -->
+    <!-- <div id="header" class="header_gl">
+        <textarea id="data-debug" style="margin-top: 30px; background: #fff; height: 80px; width: 30%"></textarea>
+        <textarea id="data-offset" style="margin-top: 30px; background: #fff; height: 80px; width: 30%"></textarea>
+        <textarea id="data-data" style="margin-top: 30px; background: #fff; height: 80px; width: 30%"></textarea>
+    </div> -->
+    <!-- 主体内容 start -->
+    <input type="hidden" class="pageType" value="">
+    <div id="main" class="ct">
+        <div id="registration-managet">
+            <table id="custom_form">
+                <tbody>
+                    <tr>
+                        <td class="title">标题</td>
+                        <td class="" style="width:400px;">控件样式</td>
+                        <td style="width: 20px;">&nbsp;</td>
+                        <td style="width: 150px;">备注</td>
+                        <td>操作</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <a href="javascript:;" class="js_storage">提 交</a>
+
+            <!--下拉式列表-->
+            <div id="form-ui" class="my_img">
+                <ul class="all_style">
+                    <li class="inp" data-id="text">
+                        <p class="l">输入框:</p>
+                        <div class="r">
+                            <p>请输入</p>
+                        </div>
+                    </li>
+                    <li class="text" data-id="text">
+                        <p class="l">文本域:</p>
+                        <div class="r">
+                            <p>请输入</p>
+                        </div>
+                    </li>
+                    <li class="c_one" data-id="radio">
+                        <p class="l">单选框:</p>
+                        <div class="r">
+                            <i class="a"></i><span>是</span><i></i><span>否</span>
+                        </div>
+                    </li>
+                    <li class="c_more" data-id="check">
+                        <p class="l">复选框:</p>
+                        <div class="r">
+                            <i class="a"></i><span>选项一</span><i></i><span>选项二</span>
+                        </div>
+                    </li>
+                    <li class="drop" data-id="list">
+                        <p class="l">下拉列表:</p>
+                        <div class="r">
+                            <p>请选择<i></i></p>
+                        </div>
+                    </li>
+                    <!-- <li class="file" data-id="text">
+                            <p class="l">上传文件:</p>
+                            <div class="r">
+                                <p>请选择文件<i></i></p>
+                            </div>
+                            <p class="grey_btn">上传文件</p>
+                        </li> -->
+                    <li class="file" data-id="image">
+                        <p class="l">上传图片:</p>
+                        <div class="r">
+                            <p>请选择图片<i></i></p>
+                        </div>
+                        <p class="grey_btn">上传图片</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="control-choose">
+                <!--数据类型-->
+                <div id="ui-attr" class="common-control">
+                    <div class="title">请选择数据类别</div>
+                    <div class="control-long-text control-item active">
+                        <div class="control-rules">
+                            <div class="checkbox">
+                                <div class="item" data-id="text">
+                                    <span class="circle"></span>
+                                    <span>文本</span>
+                                </div>
+                                <div class="item selected" data-id="int">
+                                    <span class="circle"></span>
+                                    <span>数字</span>
+                                </div>
+                                <div class="item" data-id="date">
+                                    <span class="circle"></span>
+                                    <span>日期</span>
+                                </div>
+                                <input id="rule1" type="text" placeholder="最大长度">
+                                <input id="rule2" type="text" placeholder="最小长度">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--绑定数据-->
+                <div id="ui-select" class="control-radio control-item active">
+                    <div class="control-content">
+                        <img class="control-icon" src="../static/images/7.png" alt="">
+                        <img class="control-icon white" src="../static/images/7-white.png" alt="">
+                        <span>输入选项,回车分割</span>
+                    </div>
+                    <div class="control-rules">
+                        <textarea id="bind-data" placeholder="输入选项，以回车分割"></textarea>
+                    </div>
+                </div>
+                <!--
+                        <div class="system-control">
+                        <div class="title">系统控件</div>
+                        <div class="control-area control-item">
+                        <div class="control-content">
+                        <img class="control-icon" src="../static/images/9.png" alt="">
+                        <img class="control-icon white" src="../static/images/9.png" alt="">
+                        <p class="preview-select preview">选择省市区</p>
+                        <i class="dropdown"></i>
+                        </div>
+                        </div>
+                        </div>
+                    -->
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+    <!-- 底部 start -->
+    <div id="footer" class="footer">
+        <div class="footer_text">
+            版权所有：民办教育综合管理平台 京ICP备09003423号 审批资质号：教G-201808324<br>
+技术支持：教育技术管理中心<br>
+地　址：朝阳区花家地南街8号　联系电话：123456
+        </div>
+    </div>
+    <!-- 底部 end -->
+   <script>
+
+        window.customFormFields = {
+            '1': {
+                'id': '1',
+                'offset': 1,
+                'type': 'label',
+                'field_name': '姓名',
+                'sid': 6,
+                'value': '',
+                'form_detail_id': 1
+            },
+            '2': {
+                'id': '2',
+                'offset': 2,
+                'type': 'text',
+                'value_attr': 'str',
+                'rule1': '3',
+                'rule2': '100',
+                'sid': 7,
+                'value': '123',
+                'form_detail_id': 2
+            },
+            '3': {
+                'id': '3',
+                'offset': 3,
+                'type': 'label',
+                'field_name': '只能为中文',
+                'sid': 8,
+                'value': '',
+                'form_detail_id': 3
+            },
+            '4': {
+                'id': '4',
+                'offset': 4,
+                'type': 'label',
+                'field_name': '爱好',
+                'sid': 9,
+                'value': '',
+                'form_detail_id': 4
+            },
+            '5': {
+                'id': '5',
+                'offset': 5,
+                'type': 'list',
+                'bind_data': "游泳&&看电影&&旅游",
+                'sid': 10,
+                'value': '游泳',
+                'form_detail_id': 5
+            },
+            '6': {
+                'id': '6',
+                'offset': 6,
+                'type': 'label',
+                'field_name': '最多只能选择3个',
+                'sid': 11,
+                'value': '',
+                'form_detail_id': 6
+            },
+            '7': {
+                'id': '7',
+                'offset': 7,
+                'type': 'label',
+                'field_name': '多选题',
+                'sid': 12,
+                'value': '',
+                'form_detail_id': 7
+            },
+            '8': {
+                'id': '8',
+                'offset': 8,
+                'type': 'check',
+                'bind_data': "游泳&&看电影&&旅游",
+                'sid': 13,
+                'value': '游泳&&看电影',
+                'form_detail_id': 5
+            },
+            '9': {
+                'id': '9',
+                'offset': 9,
+                'type': 'label',
+                'field_name': '最多只能选择3个',
+                'sid': 11,
+                'value': '',
+                'form_detail_id': 6
+            },
+            '10': {
+                'id': '10',
+                'offset': 10,
+                'type': 'label',
+                'field_name': '单选题',
+                'sid': 12,
+                'value': '',
+                'form_detail_id': 7
+            },
+            '11': {
+                'id': '11',
+                'offset': 11,
+                'type': 'radio',
+                'bind_data': "游泳&&看电影&&旅游",
+                'sid': 10,
+                'value': '看电影',
+                'form_detail_id': 5
+            },
+            '12': {
+                'id': '12',
+                'offset': 12,
+                'type': 'label',
+                'field_name': '最多只能选择3个',
+                'sid': 11,
+                'value': '',
+                'form_detail_id': 6
+            },
+        }
+   </script>
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/form/registration.js"></script>
+</body>
+</html>
+
+
+

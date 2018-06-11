@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit" />
+	<title>公众平台培训机构查询</title>
+	<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" href="../static/css/public-report.css">
+</head>
+<body>
+<!-- 管理头部 start -->
+<div id="header" class="header_gl myHeader">
+	<div class="header_area">
+		<h1 class="header_logo">成都市民办教育网</h1>
+		<div class="header_logo_after">
+			<div class="header_user_link heder_register">
+				<a href="user-login.html">机构登录</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 管理头部 end -->
+<!-- 主体内容start -->
+<div class="main" data-isChange="0" data-nowPage="form1">
+	<div class="ct">
+		<!-- 表单一st -->
+		<div class="">
+			<!-- 基本信息start -->
+			<div class="pub_box" data-field="1" data-id="1">
+				<div class="pub_title">
+					<h1>违法机构详情</h1>
+				</div>
+				<div class="pub_form_box">
+					<div class="pc_box" id="name">
+						<div class="pc_info">
+							<p class="input_p">违法机构:</p>
+						</div>
+						<div class="pc_content">
+							<input type="text" placeholder="请输入违法机构名称">
+						</div>
+					</div>
+					<div class="pc_box" id="address_name">
+						<div class="pc_info">
+							<p class="input_p">违法机构地址:</p>
+						</div>
+						<div class="pc_content">
+							<input type="text" placeholder="请输入违法机构地址">
+						</div>
+					</div>
+					<div class="pc_box" data-field="inner_job">
+						<div class="pc_info">
+							<p class="no_margin">违法类型:</p>
+						</div>
+						<div class="pc_content">
+							<dl class="chose_more">
+								<dd data-id="1" class=""><i></i><span>存在消防隐患</span></dd>
+								<dd data-id="2" class=""><i></i><span>无证办学</span></dd>
+								<dd data-id="3" class=""><i></i><span>夸大宣传</span></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="pc_box" id="detail_info">
+						<div class="pc_info">
+							<p>违法详情:</p>
+						</div>
+						<div class="pc_content">
+							<textarea cols="30" rows="10" placeholder="请输入违法详情"></textarea>
+						</div>
+					</div>
+				<!--</div>-->
+				<div class="pc_box" data-field="is_as_jisu_file">
+						<div class="pc_info">
+							<p>上传附件:</p>
+						</div>
+						<div class="pc_content">
+							<div class="preview_box">
+								<p class="form_input">
+									<span>未选择任何文件</span>
+									<a href="../">期末考试齐文件_01.xls</a>
+								</p>
+							</div>
+							<form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+								<a href="javascript:;" class="file_btn">
+									<span class="up_file">上传文件</span>
+									<input type="file" class="js_upload" name="file" data-id="">
+								</a>
+							</form>
+							<p class="up_info">最大可上传2MB</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 基本信息end -->
+
+			<!-- 举报人详情start -->
+			<div class="pub_box" data-field="2" data-id="2">
+				<div class="pub_title">
+					<h1>举报人详情</h1>
+				</div>
+				<div class="pub_form_box">
+					<div class="pc_box" id="">
+						<div class="pc_info">
+							<p class="input_p">姓名:</p>
+						</div>
+						<div class="pc_content">
+							<input type="text" placeholder="请输入姓名">
+						</div>
+					</div>
+					<div class="pc_box" data-field="is_foodplace" data-isNull="1">
+						<div class="pc_info">
+							<p class="dan_p">性别:</p>
+						</div>
+						<div class="pc_content">
+							<dl class="chose_one" data-id="1">
+								<dd data-id="1" class="active"><i></i><span>是</span></dd>
+								<dd data-id="2"><i></i><span>否</span></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="pc_box" id=" ">
+						<div class="pc_info">
+							<p class="input_p">身份证号:</p>
+						</div>
+						<div class="pc_content">
+							<input type="text" placeholder="请输入身份证号">
+						</div>
+					</div>
+					<div class="pc_box" id="phone_num">
+						<div class="pc_info">
+							<p class="input_p">手机号:</p>
+						</div>
+						<div class="pc_content">
+							<input type="text" placeholder="请输入手机号">
+						</div>
+					</div>
+				</div>
+				<div class="btn_box">
+					<a href="index.html" class="go_back">返回</a>
+					<a href="javascript:;" class="my_submit">提交</a>
+				</div>
+			</div>
+		</div>
+		<!-- 表单一end -->
+	</div>
+</div>
+<!-- 主体内容end -->
+<script src="../static/js/vendor.js"></script>
+<script src="../static/js/common.js"></script>
+<script src="../static/js/public-platform/new-blacklist.js"></script>
+</body>
+</html>

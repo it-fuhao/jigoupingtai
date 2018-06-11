@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            (function(){
+                var pixRatio = 1/window.devicePixelRatio;
+                var meta = document.createElement('meta');
+                //console.log(pixRatio);
+                meta.name = 'viewport';
+                meta.content = 'width=device-width,user-scalable=no,initial-scale='+pixRatio+',minimum-scale='+pixRatio+',maximum-scale='+pixRatio+'';
+                document.head.appendChild(meta);    
+            })();
+            (function(){
+                
+                var html = document.documentElement;
+                //var htmlWidth = html.getBoundingClientRect().width;
+                var htmlWidth = html.clientWidth;
+                html.style.fontSize = htmlWidth/15 +'px';
+            })();
+        </script>
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <title>成都市学科类校外培训情况普查登记</title>
+        <link rel="stylesheet" href="../static/css/info.css">
+    </head>
+    <body>
+        <!-- 头部 start -->
+        <div class="title">
+            <h1>成都市学科类校外培训情况普查登记</h1>
+        </div>
+        <!-- 头部 end -->
+        <!-- 问卷内容 start -->
+        <input type="hidden" id="wx_token" value="">
+        <input type="hidden" id="subject_id" value="">
+        <input type="hidden" id="is_need_name" value="1">
+        <div id="content" class="content">
+            <div class="subject_wrap" data-id="1">
+                <h3 class="subject_title">语文学科</h3>
+                <div class="train_tpl" data-id="1">
+                    <h4 class="train_title">培训班1</h4>
+                    <dl class="list qs_chose_one" data-id="from" data-d="">
+                        <dt><b>报班信息来源：</b>(单选题)
+                            <s>*</s>
+                        </dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>就读学校在职教师推荐或要求</span></p>
+                            <p><i></i><span>其他朋友、家长介绍</span></p>
+                            <p><i></i><span>网上搜索</span></p>
+                            <p><i></i><span>机构销售人员主动联络</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="list qs_chose_more" id="_name" data-id="train_time">
+                        <dt><b>培训时间：</b>(可多选)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>周一至周五上课时间</span></p>
+                            <p><i></i><span>周一至周五不上课时间</span></p>
+                            <p><i></i><span>周末</span></p>
+                            <p><i></i><span>假期</span></p>
+                        </dd>
+                    </dl>
+                    <!-- 多选 end -->
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="one_train_time_line">
+                        <dt><b>单次课培训时长：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="number" placeholder="单位：分钟">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="one_class_price">
+                        <dt><b>单次课课时费：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="number" placeholder="单位：元/课">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+                    
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="year_sum_price">
+                        <dt><b>该科目每年缴费总额：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="number" placeholder="单位：元">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+
+                    <!-- 多选 start -->
+                    <dl class="list qs_chose_more" data-id="train_type">
+                        <dt><b>培训类型：</b>(可多选)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>面授班课（1-6人）</span></p>
+                            <p><i></i><span>面授班课（7-15人）</span></p>
+                            <p><i></i><span>面授班课（16-20人）</span></p>
+                            <p><i></i><span>面授班课（21-30人）</span></p>
+                            <p><i></i><span>面授班课（30人以上）</span></p>
+                            <p><i></i><span>面授1对1</span></p>
+                            <p><i></i><span>网课</span></p>
+                        </dd>
+                    </dl>
+                    <!-- 多选 end -->
+
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="train_name">
+                        <dt><b>培训机构名称：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="text" placeholder="请尽量填写全称">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+
+                    <dl class="list" data-id="train_city" data-d="">
+                        <dt><b>培训机构所在区县：</b>(单选题)<s>*</s></dt>
+                        <dd class="pub_bg">
+                            <p class="select">请选择培训机构所在的区域</p>
+
+                            <!-- <input class="select" type="text" placeholder="请选择培训机构所在的区域" readonly> -->
+                        </dd>
+                    </dl>
+
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="train_address">
+                        <dt><b>培训机构详细地址：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="text" placeholder="填写尽量精确的地址。">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+
+                    <!-- 填空 start -->
+                    <dl class="list qs_input" data-id="train_teacher_name">
+                        <dt><b>培训机构该课授课教师：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <input type="text" placeholder="多人请用逗号隔开">
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+
+                    <dl class="list qs_chose_one" data-id="time_of_pay" data-d="">
+                        <dt><b>一次性缴费覆盖时长：</b>(单选题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>一次性缴纳1个月学费</span></p>
+                            <p><i></i><span>一次性缴纳3个月学费</span></p>
+                            <p><i></i><span>一次性缴纳半年的学费</span></p>
+                            <p><i></i><span>一次性缴纳1年的学费</span></p>
+                            <p><i></i><span>一次性缴纳1年以上的学费</span></p>
+                        </dd>
+                    </dl>
+
+                    <dl class="list qs_chose_one" data-id="is_need_exam" data-d="">
+                        <dt><b>进入此门课培训是否需要入学考试：</b>(单选题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>是</span></p>
+                            <p><i></i><span>否</span></p>
+                        </dd>
+                    </dl>
+
+                    <dl class="list qs_chose_one is_null" data-id="is_fast_school" data-d="">
+                        <dt><b>学习进度是否快于学校学习进度：</b>(单选题)</dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>比学校内学习进度快很多</span></p>
+                            <p><i></i><span>比学校内学习进度稍微快一些</span></p>
+                            <p><i></i><span>和学校内学习进度相当</span></p>
+                            <p><i></i><span>从不提前教学仅作复习</span></p>
+                        </dd>
+                    </dl>
+
+                    <dl class="list qs_chose_one is_null" data-id="is_beyond_school" data-d="">
+                        <dt><b>培训班内容是否超出学校学习要求：</b>(单选题)</dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>比学校学的难很多，超出学校老师要求的范围</span></p>
+                            <p><i></i><span>比学校学的稍难一点</span></p>
+                            <p><i></i><span>和学校基本相当</span></p>
+                            <p><i></i><span>比学校学的简单一些</span></p>
+                        </dd>
+                    </dl>
+
+                    <dl class="list qs_chose_one" data-id="is_have_gain" data-d="">
+                        <dt><b>参加此门课培训后，是否满意和有收获：</b>(单选题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>满意，很有收获</span></p>
+                            <p><i></i><span>满意，有一点收获</span></p>
+                            <p><i></i><span>基本满意，没太大收获</span></p>
+                            <p><i></i><span>不太满意，没太大收获</span></p>
+                            <p><i></i><span>不满意，完全没有收获</span></p>
+                        </dd>
+                    </dl>
+
+                    <dl class="list qs_chose_one" data-id="is_have_pjob" data-d="">
+                        <dt><b>是否有在职教师兼职：</b>(单选题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <p><i></i><span>有</span></p>
+                            <p><i></i><span>没有</span></p>
+                        </dd>
+                    </dl>
+
+                    <!-- 填空 start -->
+                    <dl class="list qs_textarea" data-id="supplement">
+                        <dt><b>补充：</b>(填空题)<s>*</s></dt>
+                        <dd class="pub_bg pub_chose">
+                            <textarea cols="30" rows="10" placeholder="填写兼职的在职教师名字，或其他培训机构中不合法合规的问题"></textarea>
+                        </dd>
+                    </dl>
+                    <!-- 填空 end -->
+                </div> 
+                <a class="add_btn" href="javascript:;">添加培训班</a>
+            </div>
+            <a class="submit" id="js_submit" data-url="./result.html" href="javascript:;" title="">下一步</a> 
+        </div>
+        <!-- 问卷内容 end --> 
+        <script type="text/html" id="tpl">
+            <div class="train_tpl">
+                <h4 class="train_title">培训班</h4>
+                <a class="del_train" href="javascript:;" title="">删除培训班</a>
+                <!-- 多选 start -->
+                <dl class="list qs_chose_one" data-id="from" data-d="">
+                    <dt><b>报班信息来源：</b>(单选题)
+                        <s>*</s>
+                    </dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>就读学校在职教师推荐或要求</span></p>
+                        <p><i></i><span>其他朋友、家长介绍</span></p>
+                        <p><i></i><span>网上搜索</span></p>
+                        <p><i></i><span>机构销售人员主动联络</span></p>
+                    </dd>
+                </dl>
+                <dl class="list qs_chose_more" data-id="training_date">
+                    <dt><b>培训时间：</b>(可多选)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>周一至周五上课时间</span></p>
+                        <p><i></i><span>周一至周五不上课时间</span></p>
+                        <p><i></i><span>周末</span></p>
+                        <p><i></i><span>假期</span></p>
+                    </dd>
+                </dl>
+                <!-- 多选 end -->
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="training_time">
+                    <dt><b>单次课培训时长：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="number" placeholder="单位：分钟">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="tarining_costs">
+                    <dt><b>单次课课时费：</b>(选填)<s></s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="number" placeholder="单位：元/课">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+                
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="training_sum_costs">
+                    <dt><b>该科目每年缴费总额：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="number" placeholder="单位：元">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+
+                <!-- 多选 start -->
+                <dl class="list qs_chose_more" data-id="tarining_type">
+                    <dt><b>培训类型：</b>(可多选)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>面授班课（1-6人）</span></p>
+                        <p><i></i><span>面授班课（7-15人）</span></p>
+                        <p><i></i><span>面授班课（16-20人）</span></p>
+                        <p><i></i><span>面授班课（21-30人）</span></p>
+                        <p><i></i><span>面授班课（30人以上）</span></p>
+                        <p><i></i><span>面授1对1</span></p>
+                        <p><i></i><span>网课</span></p>
+                    </dd>
+                </dl>
+                <!-- 多选 end -->
+
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="tarining_name">
+                    <dt><b>培训机构名称：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="text" placeholder="请尽量填写全称">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+
+                <dl class="list" data-id="tarining_area" data-d="">
+                    <dt><b>培训机构所在区县：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg">
+                        <p class="select">请选择培训机构所在的区域</p>
+                        <!-- <input class="select" type="text" placeholder="请选择培训机构所在的区域" readonly> -->
+                    </dd>
+                </dl>
+
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="tarining_address">
+                    <dt><b>培训机构详细地址：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="text" placeholder="填写尽量精确的地址。">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+
+                <!-- 填空 start -->
+                <dl class="list qs_input" data-id="tarining_teacher">
+                    <dt><b>培训机构该课授课教师：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <input type="text" placeholder="多人请用逗号隔开">
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+
+                <dl class="list qs_chose_one" data-id="length_of_cover" data-d="">
+                    <dt><b>一次性缴费覆盖时长：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>一次性缴纳1个月学费</span></p>
+                        <p><i></i><span>一次性缴纳3个月学费</span></p>
+                        <p><i></i><span>一次性缴纳半年的学费</span></p>
+                        <p><i></i><span>一次性缴纳1年的学费</span></p>
+                        <p><i></i><span>一次性缴纳1年以上的学费</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one" data-id="is_need_exam" data-d="">
+                    <dt><b>进入此门课培训是否需要入学考试：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>是</span></p>
+                        <p><i></i><span>否</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one is_null" data-id="is_fast_school" data-d="">
+                    <dt><b>学习进度是否快于学校学习进度：</b>(单选题)</dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>比学校内学习进度快很多</span></p>
+                        <p><i></i><span>比学校内学习进度稍微快一些</span></p>
+                        <p><i></i><span>和学校内学习进度相当</span></p>
+                        <p><i></i><span>从不提前教学仅作复习</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one is_null" data-id="is_over_school" data-d="">
+                    <dt><b>培训班内容是否超出学校学习要求：</b>(单选题)</dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>比学校学的难很多，超出学校老师要求的范围</span></p>
+                        <p><i></i><span>比学校学的稍难一点</span></p>
+                        <p><i></i><span>和学校基本相当</span></p>
+                        <p><i></i><span>比学校学的简单一些</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one" data-id="is_have_finish" data-d="">
+                    <dt><b>参加此门课培训后，是否满意和有收获：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>满意，很有收获</span></p>
+                        <p><i></i><span>满意，有一点收获</span></p>
+                        <p><i></i><span>基本满意，没太大收获</span></p>
+                        <p><i></i><span>不太满意，没太大收获</span></p>
+                        <p><i></i><span>不满意，完全没有收获</span></p>
+                    </dd>
+                </dl>
+
+                <dl class="list qs_chose_one" data-id="is_have_out_teacher" data-d="">
+                    <dt><b>是否有在职教师兼职：</b>(单选题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <p><i></i><span>有</span></p>
+                        <p><i></i><span>没有</span></p>
+                    </dd>
+                </dl>
+
+                <!-- 填空 start -->
+                <dl class="list qs_textarea" data-id="supplement">
+                    <dt><b>补充：</b>(填空题)<s>*</s></dt>
+                    <dd class="pub_bg pub_chose">
+                        <textarea cols="30" rows="10" placeholder="填写兼职的在职教师名字，或其他培训机构中不合法合规的问题"></textarea>
+                    </dd>
+                </dl>
+                <!-- 填空 end -->
+            </div>
+        </script>
+        <script src="../../test/data.js"></script>
+        <script src="../static/js/vendor.js"></script>
+        <script src="../static/js/common.js"></script>
+        <script src="../static/js/mobile/info.js"></script>  
+    </body>
+</html>    
+

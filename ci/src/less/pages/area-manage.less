@@ -1,0 +1,248 @@
+/*
+ * @Author: fuhao 
+ * @Date: 2018-05-04 18:25:19 
+ * @Last Modified by: fuhao
+ * @Last Modified time: 2018-05-29 21:45:58
+ */
+
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+
+@import "../base/index.less"; /* 通用 */
+
+@import "../layout/index.less";  /* 布局 */
+
+
+body{
+    background-color: #eef0f3;
+}
+.city_header{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(-180deg, #213284 0%, #29376B 100%);
+    .wrap{
+        width: 1080px;
+        margin: 0 auto;
+        line-height: 70px;
+        h1{
+            float: left;
+            font-size: 20px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+        .header_box{
+
+            float: right;
+
+            a{
+                display: inline-block;
+                margin-left: 25px;
+                text-align: right;
+                font-size: 14px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+            }
+        }
+        
+    }
+}
+.city_tab{
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    ul{
+        width: 1040px;
+        margin: 0 auto;
+        .clearfix();
+        li{
+            float: left;
+            line-height: 50px;
+            a{
+                display: block;
+                padding: 0 30px;
+                font-size: 14px;
+                color: #394550;
+                letter-spacing: 0;
+            }
+        }
+        .active{
+            background: #4C9BF2;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+.content{
+    width: 1040px;
+    margin-top: 12px;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.pub_box{
+    background: #fff;
+    margin-top: 10px;
+    padding: 15px 0 20px 0;
+    .pub_title {
+        height: 18px;
+        padding-right: 30px;
+        padding-left: 25px;
+        line-height: 18px;
+        border-left: 5px solid #0045A7;
+
+        h1{
+            padding-bottom: 15px;
+            font-size: 16px;
+            color: #394550;
+            letter-spacing: 0;
+            border-bottom: 1px solid #D9DBE0;
+        }
+    }
+    .pub_form_box{
+        width: 980px;
+        margin: 0 auto;
+        border-top: 1px solid #D9DBE0;
+        padding-top: 20px;
+    }
+}
+.charts {
+    width: 980px;
+    height: 400px;
+    margin: 30px auto 0;
+}
+.pc_box table{
+    max-width: 100%;
+    margin-top: -1px;
+    tr{
+        width: 980px;
+        th{
+            background: #A8B0B9;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            height: 60px;
+            font-weight: 400;
+            padding: 0 10px;
+            border:1px solid #fff;
+            p{
+                display: block;
+                width: 130px;
+            }
+        }
+        .len230{
+            p{
+                width: 230px;
+            }
+        }
+        .len288{
+            p{
+                width: 288px;   
+            }
+        }
+        .len144{
+            p{
+                width: 142px;
+            }
+        }
+        .len88{
+            p{
+                width: 88px;
+            }
+        }
+        .len64{
+            p{
+                width: 64px;
+            }
+        }
+        .len217{
+            p{
+                width: 218px;
+            }
+        }
+        .len270{
+            p{
+                width: 255px;
+            }
+        }
+        .len218{
+            p{
+                width: 186px;
+            }
+        }
+        .remove_style{
+            p{
+                width: 80px;
+            }
+            
+        }
+        td{
+            border:1px solid #fff;
+            background: #F2F4F7;
+            padding: 10px;
+            text-align: center;
+            a{
+                color: #4C9BF2;
+            }
+            input{
+                color: #394550;
+                text-align: center;
+                width: 100%;
+            }
+            .remove_table,.empty_table{
+                display: inline-block;
+                color: #4C9BF2;
+            }
+            
+        }
+    }
+}
+.main_con {
+        width: 980px;
+        margin: 0 auto;
+
+        &_table {
+            width: 100%;
+            border: 1px solid #fff;
+            
+            th,td {
+                padding: 12px 0;
+                border: 1px solid #fff;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 14px;
+            }
+
+            th {
+                text-align: center;
+                background: #A8B0B9;
+                color: #fff; 
+                font-weight: normal; 
+                padding: 22px 0;
+            }
+
+            td {
+                padding: 12px;
+                text-align: center;
+                background: #F2F4F7;
+            }
+            
+            a {
+                color: #4C9BF2;
+            }
+
+        }
+    }
+
+.charts_box{
+    width: 980px;
+    margin: 0 auto;
+    .clearfix();
+    .charts {
+        float: left;
+        width: 470px;
+        height: 400px;
+        margin: 0 8px;
+    }
+}

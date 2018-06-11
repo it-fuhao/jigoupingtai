@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+ * 筹备审批查看
+ * @authors Abby (abbyyigoog@gmail.com)
+ * @date    2018-04-26 20:42:36
+ * @version $Id$
+ */
+@import "../variables/index.less"; /* 变量 */
+@import "../minxins/index.less";  /* 混入 */
+
+@import "../base/index.less"; /* 通用 */
+
+@import "../layout/index.less";  /* 布局 */
+
+body {
+    background: #EEF0F1;
+}
+
+#main_box {
+    padding-top: 12px;
+}
+
+.main {
+    width: 980px;
+    padding: 20px 30px 40px;
+    margin: 0 auto 50px;
+    background: #FFF;
+
+    &_table {
+        padding-bottom: 30px;
+
+        &_title {
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #394550;
+            letter-spacing: 0;
+            line-height: 26px;
+        }
+
+        table {
+            width: 850px;
+            margin: 0 auto;
+            border: 1px solid #D9DBE0;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+
+        th {
+            width: 200px;
+            background: #F2F4F7;
+            border: 1px solid #D9DBE0;
+            color: #394550;
+            font-weight: normal;
+        }
+
+        td {
+            padding: 15px 0 15px 20px;
+            border: 1px solid #D9DBE0;
+            color: #67717D;
+        }
+    }
+}
+
+.bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    background: #FFF;
+    box-shadow: 0 -2px 5px 0 rgba(0,0,0,0.15);
+
+    &_con {
+        width: 980px;
+        margin: 0 auto;
+        text-align: right;
+
+        a {
+            .inline-block();
+
+            width: 178px;
+            height: 38px;
+            margin-left: 16px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 38px;
+            border: 1px solid #4C9BF2;
+            border-radius: 4px;
+        }
+
+        .disagree {
+            color: #4C9BF2;
+        }
+
+        .consent {
+            background: #4C9BF2;
+            color: #FFF;
+        }
+    }
+}
+

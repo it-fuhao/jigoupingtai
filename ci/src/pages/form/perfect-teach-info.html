@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>完善办学许可证信息</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/formal-setup.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <input type="hidden" id="addCheck" value="">
+    <!-- 主体内容start -->
+    <div id="header1" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+            <div class="header_logo_after">
+                <div class="header_nav">
+                    <a class="active" href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 end -->
+    <!-- 机构申办流程条 start -->
+    <div class="subnav">
+        <div class="subnav_con_jg active">
+            <a class="subnav_con_jg_link active" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+            <a class="subnav_con_jg_link active" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+            <a class="subnav_con_jg_link active" href="javascript:;" title="预约"><span>预约</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="ct info2">
+            <div class="pub_box">
+                <div class="pub_title">
+                    <h1>办学信息</h1>
+                </div>
+                <div class="pub_form_box">
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">名称:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">办学许可证编号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">有效期:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                            <span class="wz">-</span>
+                            <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">邮编:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">电话:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>主管部门:</p>
+                        </div>
+                        <div class="pc_content">
+                            <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                            <ul class="drop_list scroll">
+                                <!-- todo 数据渲染 -->
+                                <li data-id="1">xxxxx教育局</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                                <li data-id="2">中等及中等以下</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">批准文号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>主管部门:</p>
+                        </div>
+                        <div class="pc_content">
+                            <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                            <ul class="drop_list scroll">
+                                <li data-id="1">营利性</li>
+                                <li data-id="2">非营利性</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">原办学许可证编号:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">正式设立时间:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" placeholder="请填写" class="js_time_input1" readonly>
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p class="input_p">许可证办学内容:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="long_input" placeholder="请填写">
+                        </div>
+                    </div>
+                    <div class="pc_box">
+                        <div class="pc_info">
+                            <p>办学许可证副本:</p>
+                        </div>
+                        <div class="pc_content">
+                            <div class="preview_box">
+                                <p class="form_input">
+                                    <span>未选择任何文件</span>
+                                    <a href="javascript:;">期末考试齐文件_01.xls</a>
+                                </p>
+                            </div>
+                            <form action="/TM/school/student/achievement/uploadFile" method="post" class="file_box">
+                                <a href="javascript:;" class="file_btn">
+                                    <span>上传文件</span>
+                                    <input type="file" class="js_upload" name="file" data-id="">
+                                </a>
+                            </form>
+                            <p class="up_info">最大可上传2MB</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="js_storage">保 存</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容end -->
+
+    
+
+
+
+    <script src="../static/js/form/formal-setup.js"></script>
+</body>
+
+</html>

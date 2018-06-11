@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <title>申请办学-筹设表单</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/preparation.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <!-- 机构头部 start -->
+    <div id="header" class="header_jg">
+        <div class="header_area">
+            <h1 class="header_logo">民办教育机构平台</h1>
+            <div class="header_logo_after">           
+                <div class="header_nav">
+                    <a class="active" href="javascript:;">申请办学</a>
+                    <a href="javascript:;">登记管理</a>
+                    <a href="javascript:;">备案管理</a>
+                    <a href="javascript:;">办学变更</a>
+                </div>
+                <div class="header_user_link">
+                    <a href="javascript:;">修改密码</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 机构头部 end -->
+
+    <!-- 机构申办流程条 start -->
+    <div class="subnav">
+        <div class="subnav_con_jg active">
+            <a class="subnav_con_jg_link" href="javascript:;" title="筹备设立"><span>筹备设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="正式设立"><span>正式设立</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="预约"><span>预约</span></a>
+            <a class="subnav_con_jg_link" href="javascript:;" title="完善资料"><span>完善资料</span></a>
+        </div>
+    </div>
+    <!-- 机构申办流程条 end -->
+    
+    <!-- 主体内容 start -->
+    <div class="main">
+        <!-- 法人属性start -->
+        <div class="legal_person" id="legal" data-id="2">
+            <p>选择法人属性：</p>
+            <ul>
+                <li data-id="1"><i></i><span>营利性机构</span></li>
+                <li class="active" data-id="2"><i></i><span>非营利性机构</span></li>
+            </ul>
+        </div>
+        <!-- 法人属性end -->
+        <!-- 一、基本信息start -->
+        <div class="pub_box basic_info">
+            <div class="pub_title">
+                <h1>一、基本信息</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="name">
+                    <div class="pc_info">
+                        <p class="err_border">名称:</p>
+                    </div>
+                    <div class="pc_content">
+                        <textarea cols="30" rows="10" placeholder="请填写">123</textarea>
+                    </div>
+                </div>
+                <div class="pc_box" id="school">
+                    <div class="pc_info">
+                        <p>学院或学校:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">高等</li>
+                            <li data-id="2">中等及中等以下</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="student_object">
+                    <div class="pc_info">
+                        <p class="no_margin">招生对象:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_more">
+                            <dd data-id="1"><i></i><span>学前教育（3-6岁）</span></dd>
+                            <dd data-id="2"><i></i><span>小学教育（7-12岁）</span></dd>
+                            <dd data-id="3"><i></i><span>初中教育（12-15岁）</span></dd><br>
+                            <dd data-id="4"><i></i><span>高中教育（15-18岁）</span></dd>
+                            <dd data-id="5"><i></i><span>（18岁以上）</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" id="is_higher_education">
+                    <div class="pc_info">
+                        <p class="er_p">办学内容实施高等 <br>教育自学考试助学:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" id="is_has_teacher">
+                    <div class="pc_info">
+                        <p class="dan_p">有高校系列教师:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" id="run_school_ct">
+                    <div class="pc_info">
+                        <p>办学内容:</p>
+                    </div>
+                    <div class="pc_content">
+                        <textarea cols="30" rows="10" placeholder="请填写办学内容"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 一、基本信息end -->
+        <!-- 二、举办人start -->
+        <div class="pub_box">
+            <div class="pub_title">
+                <h1>二、举办人</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="chose_host">
+                    <div class="pc_box" id="legal_name">
+                        <div class="pc_info">
+                            <p>法人举办者名称:</p>
+                        </div>
+                        <div class="pc_content">
+                            <textarea cols="30" rows="10" placeholder="多个请用逗号分割，（格式如：举办者1，举办者2, 如果没有无需填写）"></textarea>
+                        </div>
+                    </div>
+                    <div class="pc_box" id="legal_money">
+                        <div class="pc_info">
+                            <p class="input_p">法人举办者出资总额:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="long_input" placeholder="请填写法人举办者出资总额（万元）">
+                        </div>
+                    </div>
+                    <div class="pc_box" id="natural_name">
+                        <div class="pc_info">
+                            <p><i></i><span>自然人举办者名称:</span></p>
+                        </div>
+                        <div class="pc_content">
+                            <textarea cols="30" rows="10" placeholder="多个请用逗号分割，（格式如：举办者1，举办者2, 如果没有无需填写）"></textarea>
+                        </div>
+                    </div>
+                    <div class="pc_box" id="natural_money">
+                        <div class="pc_info">
+                            <p class="input_p">自然人举办者出资总额:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="long_input" placeholder="请填写自然人举办者出资总额（万元）">
+                        </div>
+                    </div>
+                </div>
+                <div class="pc_box" id="is_union">
+                    <div class="pc_info">
+                        <p class="dan_p">联合办学:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 二、举办人end -->
+        <!-- 三、组织机构start -->
+        <div class="pub_box organization">
+            <div class="pub_title">
+                <h1>三、组织机构</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="is_organization">
+                    <div class="pc_info">
+                        <p class="dan_p">建立了中国共产党基层组织:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" id="decison_maker">
+                    <div class="pc_info">
+                        <p class="input_p">决策机构负责人:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="else_decisions">
+                    <div class="pc_info">
+                        <p class="er_p">设立理事会、董事会或 <br>者其他形式的决策机构:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">理事会</li>
+                            <li data-id="2">董事会</li>
+                            <li data-id="3">其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="else_organization">
+                    <div class="pc_info">
+                        <p class="input_p">其他组织机构:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" class="long_input" placeholder="如果没有，填无">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 三、组织机构end -->
+        <!-- 四、管理制度start -->
+        <div class="pub_box mana_sys">
+            <div class="pub_title">
+                <h1>四、管理制度</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="rule">
+                    <div class="pc_info">
+                        <p class="no_margin">制定的各项规章制度:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_more">
+                            <div class="left_list">
+                                <dd data-id="1"><i></i><span>行政管理制度</span></dd>
+                                <dd data-id="3"><i></i><span>安全管理制度</span></dd>
+                                <dd data-id="5"><i></i><span>学生管理制度</span></dd>
+                                <dd data-id="7"><i></i><span>收费和退费管理制度</span></dd>
+                                <dd data-id="9"><i></i><span>设施设备管理制度</span></dd>
+                            </div>
+                            <div class="right_list">
+                                <dd data-id="2"><i></i><span>教学管理制度</span></dd>
+                                <dd data-id="4"><i></i><span>员工管理制度</span></dd>
+                                <dd data-id="6"><i></i><span>档案管理制度</span></dd>
+                                <dd data-id="8"><i></i><span>资产管理、财务管理以及学杂费存取专用帐户管理制度</span></dd>
+                                <dd data-id="10"><i></i><span>教师培训及考核制度</span></dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 四、管理制度end -->
+        <!-- 五、主要管理人员start -->
+        <div class="pub_box main_manager">
+            <div class="pub_title">
+                <h1>五、主要管理人员</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="legal_man">
+                    <div class="pc_info">
+                        <p>法定代表人:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">决策机构负责人</li>
+                            <li data-id="2">校长</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="principal">
+                    <div class="pc_info">
+                        <p class="input_p">校长:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="principal_id">
+                    <div class="pc_info">
+                        <p class="input_p">校长身份证号码:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="principal_degree">
+                    <div class="pc_info">
+                        <p>校长学历:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">博士研究生</li>
+                            <li data-id="2">硕士研究生</li>
+                            <li data-id="3">本科</li>
+                            <li data-id="4">高等专科（高等职业）</li>
+                            <li data-id="5">高中（中专、中等职业）</li>
+                            <li data-id="6">初中</li>
+                            <li data-id="7">小学</li>
+                            <li data-id="8">其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="principal_exp">
+                    <div class="pc_info">
+                        <p>校长相关教育管理经验年限:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">不满五年</li>
+                            <li data-id="2">五年以上（含五年）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 五、主要管理人员end -->
+        <!-- 六、师资队伍start -->
+        <div class="pub_box teacher_ranks">
+            <div class="pub_title">
+                <h1>六、师资队伍</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="teaxher_num">
+                    <div class="pc_info">
+                        <p class="input_p">教师总数:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="subject_num">
+                    <div class="pc_info">
+                        <p class="er_p">学科类和学科延伸 <br>类培训授课人员总数:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="subject_hasCard_num">
+                    <div class="pc_info">
+                        <p class="er_p">学科类和学科延伸类培训授 <br>课人员中有教师资格证人数:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="fulltime_teacher">
+                    <div class="pc_info">
+                        <p class="input_p">专职教师数:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 六、师资队伍end -->
+        <!-- 七、办学场所和设施设备 start -->
+        <div class="pub_box teach_place">
+            <div class="pub_title">
+                <h1>七、办学场所和设施设备</h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box" id="school_addres">
+                    <div class="pc_info">
+                        <p>办学地址:</p>
+                    </div>
+                    <div class="pc_content">
+                        <!-- <p class="dropdown_area" data-id=""><span>请选择</span><i></i></p> -->
+                        
+                        <input type="text" placeholder="请填写详细地址" class="addr_input">
+                    </div>
+                </div>
+                <div class="pc_box" id="teach_place_area">
+                    <div class="pc_info">
+                        <p class="input_p">教学用房建筑面积:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="place_all_area">
+                    <div class="pc_info">
+                        <p class="input_p">总建筑面积（平方米）:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="pc_box" id="house_property">
+                    <div class="pc_info">
+                        <p>房屋性质:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">商业</li>
+                            <li data-id="2">住宅</li>
+                            <li data-id="3">厂房</li>
+                            <li data-id="4">学校</li>
+                            <li data-id="5">社区设施</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="teach_area_property">
+                    <div class="pc_info">
+                        <p>办学场所性质:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list">
+                            <li data-id="1">租赁</li>
+                            <li data-id="2">自有</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box" id="property_owner">
+                    <div class="pc_info">
+                        <p class="input_p">产权人:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写">
+                    </div>
+                </div>
+                <div class="hide_box">
+                    <div class="pc_box" id="term_of_lease">
+                        <div class="pc_info">
+                            <p>租赁期限:</p>
+                        </div>
+                        <div class="pc_content">
+                            <input type="text" class="date_input js_time_input1" placeholder="请填写" readonly>
+                            <span class="wz">-</span>
+                            <input type="text" class="date_input js_time_input2" placeholder="请填写" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc_box" id="is_fire_protection">
+                    <div class="pc_info">
+                        <p class="er_p">办学场所符合国 <br>家规定的消防要求:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box" id="is_boarding">
+                    <div class="pc_info">
+                        <p class="dan_p">是否招收寄宿学员:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="hide_box">
+                    <div class="pc_box" id="read_place">
+                        <div class="pc_info">
+                            <p class="dan_p">是否有相应阅览场所:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>是</span></dd>
+                                <dd data-id="2"><i></i><span>否</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pc_box" id="live_place">
+                        <div class="pc_info">
+                            <p class="dan_p">是否有生活场所:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>是</span></dd>
+                                <dd data-id="2"><i></i><span>否</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pc_box" id="sports_place">
+                        <div class="pc_info">
+                            <p class="dan_p">是否有运动场所:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>是</span></dd>
+                                <dd data-id="2"><i></i><span>否</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pc_box" id="is_fire_dormitory">
+                        <div class="pc_info">
+                            <p class="er_p">所提供的宿舍符 <br>合相关消防要求:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>是</span></dd>
+                                <dd data-id="2"><i></i><span>否</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc_box" id="lunch_service">
+                    <div class="pc_info">
+                        <p class="dan_p">向学员提供餐饮服务:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one">
+                            <dd data-id="1"><i></i><span>是</span></dd>
+                            <dd data-id="2"><i></i><span>否</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="hide_box">
+                    <div class="pc_box" id="food_safety">
+                        <div class="pc_info">
+                            <p class="dan_p">符合国家食品安全的标准:</p>
+                        </div>
+                        <div class="pc_content">
+                            <dl class="chose_one">
+                                <dd data-id="1"><i></i><span>是</span></dd>
+                                <dd data-id="2"><i></i><span>否</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" data-id="1" class="js_storage">暂存</a>
+                <a href="javascript:;" data-id="2" class="js_submit">提交</a>
+            </div>
+        </div>
+        <!-- 七、办学场所和设施设备 end -->
+        
+    </div>
+    <!-- 主体内容 end -->
+    <script>
+        window.Errorfields = ["", "school_type", "fa_total", "party_hoster", "law_rules", "principal", "teacher_train_total", "company_build_area"];
+    </script>
+
+    <script src="../static/js/form/preparation.js"></script>
+</body>
+
+</html>

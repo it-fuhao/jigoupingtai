@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增用户</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/images/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/register-new.css">
+    <script src="../static/js/vendor.js"></script>
+    <script src="../static/js/common.js"></script>
+</head>
+
+<body>
+    <!-- 主体 -->
+
+    <div class="main ct">
+
+        <div class="pub_box">
+            <div class="pub_title">
+                <h1>
+                    <span class="title">新增用户</span>
+                </h1>
+            </div>
+            <div class="pub_form_box">
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">姓名:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写" id="name">
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">密码:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写" id="password">
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">电话:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写" id="phone">
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p class="input_p">备注:</p>
+                    </div>
+                    <div class="pc_content">
+                        <input type="text" placeholder="请填写" id="remark">
+                    </div>
+                </div>
+                <div class="pc_box chose_level">
+                    <div class="pc_info">
+                        <p class="dan_p">区县:</p>
+                    </div>
+                    <div class="pc_content">
+                        <dl class="chose_one" data-id="">
+                            <dd data-id="1"><i></i><span>1</span></dd>
+                            <dd data-id="2"><i></i><span>2</span></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pc_box address2">
+                    <div class="pc_info">
+                        <p class="dan_p">地址:</p>
+                    </div>
+                    <div class="pc_content" id="Cascader" data-id="">
+                        
+                    </div>
+                </div>
+                <div class="pc_box bumen">
+                    <div class="pc_info">
+                        <p class="dan_p">当前市:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="grey_p">xx市</p>
+                    </div>
+                </div>
+                <div class="pc_box bumen">
+                    <div class="pc_info">
+                        <p>所属部门:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" id="section" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list scroll">
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_box">
+                    <div class="pc_info">
+                        <p>所属职级:</p>
+                    </div>
+                    <div class="pc_content">
+                        <p class="dropdown" id="level" data-id=""><span>请选择</span><i></i></p>
+                        <ul class="drop_list scroll">
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="btn_box">
+            <a href="javascript:;" class="js_storage">保存</a>
+        </div>
+
+    </div>
+    <script>
+        //部门职级数据（假的）
+        //如果有真数据 直接渲染在这[]（格式统一）
+        window.sectionJson = [{
+                'id': '1',
+                'val': '部门1',
+                'child': [{
+                    '_id': '1_1',
+                    '_val': '职级1_1'
+                }, {
+                    '_id': '1_2',
+                    '_val': '职级1_2'
+                }]
+            }, {
+                'id': '2',
+                'val': '部门2',
+                'child': [{
+                    '_id': '2_1',
+                    '_val': '职级2_1'
+                }, {
+                    '_id': '2_2',
+                    '_val': '职级2_2'
+                }]
+            }, {
+                'id': '3',
+                'val': '部门3',
+                'child': [{
+                    '_id': '3_1',
+                    '_val': '职级3_1'
+                }, {
+                    '_id': '3_2',
+                    '_val': '职级3_2'
+                }]
+            }]
+    </script>
+    <script src="../static/js/form/add-user.js"></script>
+</body>
+
+</html>
